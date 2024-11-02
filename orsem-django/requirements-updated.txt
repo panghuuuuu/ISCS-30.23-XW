@@ -1,0 +1,29 @@
+python-decouple
+django==2.2.12
+django-cors-headers
+django-storages
+django-extensions==3.1.1
+# google-api-core==1.21.0
+google-api-python-client
+# google-auth==1.18.0
+google-auth-oauthlib
+# googleapis-common-protos==1.52.0
+social-auth-app-django
+social-auth-core
+djangorestframework==3.12.4
+rest-social-auth
+django-rest-framework-social-oauth2
+# psycopg2==2.8.5
+django-cloudinary-storage[video]
+typing-extensions==3.7.4.3
+cloudinary
+gunicorn
+django-environ==0.4.5
+drf-jwt==1.19.0
+environ==1.0
+PyJWT==1.7.1
+djangorestframework-simplejwt
+qrcode
+google-auth-httplib2
+google-api-python-client
+Pillow

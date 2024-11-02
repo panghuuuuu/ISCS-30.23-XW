@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /virtual-id
+Disallow: /entry-pass
+Disallow: /entry-pass-no-one-can-find-this-right
+Disallow: /block
+Disallow: /wearetestinglogin

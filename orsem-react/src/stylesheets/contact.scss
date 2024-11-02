@@ -1,0 +1,215 @@
+@import "./_variables.scss";
+
+@media only screen and (max-width: 991px) {
+  .Contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.Contact {
+  .contact-forms {
+    position: relative;
+    .upper-contact {
+      position: absolute;
+      width: 34%;
+      height: auto;
+    }
+
+    .contact-forms-text {
+      width: 60vw;
+      padding: 10vw 0px;
+      margin-left: auto;
+      margin-right: auto;
+      h1 {
+        color: $pink;
+        text-align: center;
+        font-size: $font-size--9;
+      }
+      p {
+        color: $blue;
+      }
+
+      .text-field-item {
+        margin-top: 1rem;
+        color: $darkblue;
+
+        label {
+          font-weight: bold;
+          margin-bottom: 0.25rem;
+        }
+        input {
+          background-color: #fff3e9;
+          border: none;
+          color: $blue;
+          height: 2.5rem;
+          width: 100%;
+          font-size: 1.2rem;
+          padding: 0 20px;
+        }
+        input::placeholder {
+          color: $darkblue;
+        }
+
+        textarea {
+          background-color: #fff3e9;
+          border: none;
+          color: $blue;
+          height: 10rem;
+          width: 100%;
+          padding: 0.5rem 20px;
+          resize: none;
+          font-size: 1.2rem;
+        }
+
+        textarea::placeholder {
+          color: #150068;
+        }
+      }
+
+      .teal-btn {
+        background: #5979f6;
+        padding: 1.25rem 2rem;
+        margin-top: 48px;
+        margin-left: auto;
+        margin-right: auto;
+        /* font-size: 1.5rem; */
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 3rem;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    .lower-contact-container {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      .lower-contact {
+        width: 34%;
+        height: auto;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  .soc-med {
+    background-color: $blue;
+    position: relative;
+    // height: 900px;
+
+    .soc-med-body {
+      padding: 74px 7.2vw;
+
+      h1 {
+        color: #ffffff;
+        font-size: $font-size--9;
+        span {
+          color: $darkgreen;
+        }
+      }
+
+      p {
+        color: #ffffff;
+      }
+
+      .soc-med-links {
+        // width: 100%;
+        margin-top: 112px;
+        margin-bottom: 380px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        .button-socmed {
+          width: 80px;
+          height: 80px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .lower-socmed {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      bottom: 0%;
+    }
+  }
+}
+
+.contact-offices-text {
+  margin-top: 5rem;
+  padding-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 127px;
+  h1 {
+    color: $pink;
+    text-align: center;
+    font-size: $header-size;
+  }
+}
+.contact-offices {
+  background: #fff3e9;
+  position: relative;
+}
+.container {
+  padding-top: 20px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    color: $orange;
+    font-size: $font-size--7;
+    text-align: center;
+  }
+}
+.boxes-header {
+  font-size: 1.5rem;
+  color: #fa775a;
+  padding-bottom: 10px;
+}
+.box-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #fffcfa;
+  border-radius: 16px;
+  width: 378px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin-left: 12px !important;
+  margin-right: 12px !important;
+  span {
+    font-size: 1.2rem;
+    color: #424242;
+    padding-bottom: 5px;
+  }
+}
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 100%;
+}
+.find a {
+  text-decoration: none;
+}
+.find {
+  font-size: 1.5rem;
+  line-height: 28px;
+  text-align: center;
+  padding-bottom: 94px;
+  padding-right: 10px;
+  padding-left: 10px;
+}

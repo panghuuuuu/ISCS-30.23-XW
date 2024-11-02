@@ -1,0 +1,471 @@
+@import "./variables";
+@import "./fonts";
+
+.Block {
+  margin-top: 5rem;
+}
+
+.block-container {
+  min-height: 45vh;
+  align-content: center;
+  margin-bottom: 5vw;
+}
+.search-container {
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    text-decoration: none !important;
+  }
+
+  margin-bottom: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45vw;
+  height: 6vw;
+  background: #fff3e9;
+  border-radius: 55px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  @media (max-width: 500px) {
+    width: 65vw;
+    height: 8vw;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none !important;
+    text-decoration: none !important;
+  }
+
+  #idnum {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .search-text {
+    font-size: 1.7vw !important;
+    background: #fff3e9;
+    line-height: 26px !important;
+    border: none !important;
+    width: 50%;
+    height: 6vw;
+    vertical-align: middle;
+    margin-left: 30px !important;
+    color: #000000;
+
+    @media (max-width: 600px) {
+      margin-left: 15px !important;
+    }
+
+    @media (max-width: 600px) {
+      margin-left: 7.5px !important;
+    }
+
+    @media screen and (max-width: 426px) {
+      font-size: 2vw !important;
+    }
+  }
+
+  .btn {
+    padding: 1rem 4rem;
+    margin-right: 5px;
+    font-weight: 500;
+    background: #5979f6;
+    border-radius: 47.5px;
+
+    @media (max-width: 900px) {
+      padding: 0.75rem 3rem;
+    }
+
+    @media (max-width: 700px) {
+      padding: 0.5rem 2rem;
+    }
+
+    @media (max-width: 500px) {
+      padding: 0.35rem 1.5rem;
+    }
+
+    @media screen and (max-width: 426px) {
+      margin: auto;
+      text-align: center;
+    }
+  }
+  .btn:hover {
+    cursor: pointer;
+
+    a:hover {
+      color: red !important;
+    }
+  }
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  width: 28rem;
+  height: 19rem;
+  margin: 20px;
+  background: #419361;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  .score-point {
+    justify-content: center;
+    flex-shrink: 0;
+    color: #fff3e9;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.score-deets {
+  color: #419361;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.details {
+  background: #fff3e9;
+  border-radius: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75vw;
+  height: fit-content;
+  padding: 2vw 4vw;
+
+  @media (max-width: 470px) {
+    width: 90vw;
+  }
+
+  h1 {
+    text-align: center;
+    color: $pink;
+  }
+  h2 {
+    color: $orange;
+    font-weight: normal;
+    font-size: 3.5vw !important;
+    text-align: center;
+    padding: 2vw;
+  }
+  .block {
+    display: flex;
+    // background-color: blue;
+    justify-content: space-between;
+    align-items: center;
+    // padding-top: 4vw;
+    // padding-bottom: 3vw;
+
+    span {
+      font-size: 48px;
+      font-weight: 600;
+      color: $darkgreen;
+
+      @media (max-width: 600px) {
+        font-size: 36px;
+      }
+
+      @media (max-width: 470px) {
+        font-size: 28px;
+      }
+    }
+  }
+  p {
+    font-size: 2.5vw !important;
+    // text-align: center;
+  }
+  .fb {
+    // background-color: blue;
+    // width: auto;
+    // padding: 0 8vw;
+    display: flex;
+    // flex-direction: row;
+    justify-content: space-between;
+    img {
+      height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (max-width: 600px) {
+        height: 42px;
+      }
+      @media (max-width: 470px) {
+        height: 36px;
+      }
+    }
+    .fb-container {
+      display: flex;
+      flex-direction: column;
+      margin-left: 24px;
+      // width: 50%;
+      a {
+        display: flex;
+        justify-content: center;
+        img {
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+    }
+    p {
+      padding-top: 1vw;
+      font-size: 1.5vw !important;
+      text-align: center;
+    }
+  }
+  .session {
+    // background-color: red;
+    // width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    // display: flex;
+    // flex-direction: row;
+    // padding-top: 3vw;
+    justify-content: center;
+    .sesh-container {
+      display: flex;
+      text-align: center;
+      background-color: #2e6bf4;
+      color: white;
+      margin: 16px 0;
+      padding: 6px;
+    }
+    .sesh-title {
+      width: 30%;
+    }
+    .sesh-container p {
+      font-size: 1.75vw !important;
+      margin: 4px 0px;
+
+      @media (max-width: 500px) {
+        font-size: 2.5vw !important;
+      }
+    }
+    .sesh-date-time {
+      width: 70%;
+    }
+    // conditional bg colors
+    .plenary {
+      background-color: #2e6bf4;
+    }
+    .block {
+      background-color: #f4b949;
+    }
+    .onsite {
+      background-color: #ed6c9d;
+    }
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    // background-color: red;
+    text-align: right;
+    // width: 100%;
+
+    /* Comment out when freshie journal is available */
+    .btn-primer {
+      pointer-events: none;
+    }
+  }
+  .btn {
+    display: block;
+    width: auto;
+    margin-right: 0;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding: 1.1rem 2.75rem;
+    background: $darkblue;
+    border-radius: 47.5px;
+
+    @media (max-width: 900px) {
+      padding: 0.75rem 1rem;
+    }
+  }
+}
+.block-heading {
+  padding-top: 3vw;
+}
+.error-message {
+  height: 10vh;
+  text-align: center;
+  // background-color: red;
+  color: #ea785c;
+}
+.link {
+  // width: 35%;
+  padding: 24px 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    display: flex;
+    justify-content: center;
+    img {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  img {
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20%;
+  }
+  .session-links {
+    display: flex;
+  }
+  .link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 36px;
+  }
+  p {
+    padding-top: 1.5vw;
+    font-size: 1.5vw !important;
+    text-align: center;
+  }
+  .sesh-container {
+    background-color: #fa4204;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 60px;
+      width: 60px;
+    }
+
+    @media (max-width: 900px) {
+      width: 50px;
+      height: 50px;
+
+      img {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+}
+.journal-container {
+  p {
+    margin: 0;
+  }
+  .issu-embed-container {
+    background-color: #892bcb;
+    height: 50vh;
+    margin: 36px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+
+    @media (max-width: 650px) {
+      margin: 18px 0;
+    }
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @media (max-width: 650px) {
+      flex-direction: column;
+      margin: 16px;
+    }
+
+    .btn {
+      text-align: center;
+      margin: 0;
+      background-color: #7e32c4;
+
+      padding: 1.1rem 2.75rem;
+
+      @media (max-width: 900px) {
+        padding: 0.75rem 1rem;
+      }
+
+      @media (max-width: 650px) {
+        margin-bottom: 8px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .details .session .sesh-heading {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  // .search-container {
+  //   .btn {
+  //     height: 4.5vw;
+  //     padding: 0rem 1.5rem;
+  //     margin-top: auto;
+  //     margin-bottom: auto;
+  //   }
+  // }
+  .details .session .sesh-heading {
+    font-size: 2.5vw;
+  }
+  .details .btn {
+    padding: 0.3rem 2.5rem;
+    font-size: 2vw;
+  }
+}
+.student-entry {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.materials-to-bring {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.materials-to-bring p {
+  font-size: 16px !important;
+}
+
+.protocols {
+  span {
+    color: $blue !important;
+  }
+}
+
+.guidelines-container {
+  .images {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+  }
+  .images img {
+    max-height: 10vw;
+  }
+}

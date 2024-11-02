@@ -1,0 +1,81 @@
+@import "./_variables.scss";
+
+.post-detail-header {
+  width: 100%;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  background-color: #d28fff;
+  display: flex;
+
+  .post-back-button {
+    margin-top: 1rem;
+    width: 35px;
+    height: 35px;
+  }
+
+  .post-details {
+    padding-left: 2rem;
+    color: white;
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    padding: 4rem;
+    padding-bottom: 6rem;
+
+    .post-back-button {
+      margin-top: 1.5rem;
+      margin-right: 2rem;
+      width: 45px;
+      height: 45px;
+    }
+
+    .post-details {
+      padding-right: 10rem;
+
+      a {
+        color: #fff3e9;
+      }
+
+      h1 {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.post-media-container {
+  padding: 5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .post-media-wrapper {
+    text-align: center;
+    width: 100%;
+  }
+  .post-image {
+    text-align: center;
+    max-width: 80%;
+    object-fit: contain;
+  }
+  .post-video {
+    width: 80%;
+    object-fit: contain;
+    @media screen and (min-width: $laptop-breakpoint) {
+      height: 810px;
+    }
+    @media screen and (min-width: $mobile-large-breakpoint) {
+      height: 540px;
+    }
+  }
+}

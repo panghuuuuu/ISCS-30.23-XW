@@ -1,0 +1,67 @@
+@import "./variables";
+
+.virtual-id-container {
+  //   background-color: red;
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 5rem;
+
+  padding: 3vw 24vw 5vw;
+  color: $pink;
+  //   width: 75vw;
+  //   height: 85vh;
+
+  @media screen and (max-width: 995px) {
+    padding: 3vw 8vw 5vw;
+  }
+
+  h1 {
+    font-size: 5vw !important;
+  }
+
+  .id-container img {
+    max-width: 30%;
+    margin-bottom: 1vw;
+  }
+
+  .info-container {
+    background-color: #fff3e9;
+    color: black;
+
+    width: 100%;
+    margin-top: 40px;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    .image-container {
+      //   width: 50%;
+      //   background-color: #faa400;
+
+      img {
+        background-color: #faa400;
+        padding: 5%;
+        width: 60%;
+        height: 100%;
+      }
+    }
+
+    .student-info {
+      padding: 1rem;
+      background-color: white;
+      p {
+        line-height: 4px;
+      }
+    }
+  }
+}
+
+.entry-pass-img {
+  margin: 3em;
+  width: 90%;
+  border: 5vw solid #fff3e9;
+}

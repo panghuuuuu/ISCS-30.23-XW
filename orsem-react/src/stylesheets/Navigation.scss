@@ -1,0 +1,281 @@
+@import "./_variables.scss";
+
+header.ui.menu {
+  border: none !important;
+  border-radius: 0px !important;
+  background: $blue;
+  height: 4.5rem;
+  padding-top: 0.5rem;
+
+  .grid {
+    width: 100% !important;
+    margin: -1rem auto !important;
+  }
+
+  .active.item {
+    font-weight: 700 !important;
+    color: white !important;
+  }
+
+  .item.logo-wrapper.active,
+  .item.logo-wrapper:hover {
+    background: none !important;
+  }
+
+  .item {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: max-content;
+    margin-top: 6px;
+
+    /* Comment this out if QR codes have already been generated */
+    // &:last-child {
+    //   pointer-events: none;
+    // }
+
+    &:before,
+    &:hover {
+      background: none !important;
+      color: $blue5 !important;
+    }
+
+    // &.nav-program{
+    //   padding-left: 0 !important;
+    //   margin-left: 2rem;
+    // }
+
+    > .menu {
+      background: $blue !important;
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25) !important;
+      border: 1px solid $blue;
+      border-radius: 10px;
+      display: flex;
+
+      .menu-item {
+        margin: 0;
+        text-align: center;
+        font-size: 1em !important;
+        padding: 1.07857143em 1.14285714em !important;
+        background: 0 0 !important;
+        text-transform: none !important;
+        box-shadow: none !important;
+        transition: none !important;
+        font-weight: 500;
+        color: white !important;
+        width: 100%;
+
+        .unclickable {
+          pointer-events: none;
+        }
+
+        &:hover {
+          color: white !important;
+        }
+
+        &.d1:hover {
+          background: white !important;
+          color: $blue !important;
+        }
+
+        &.d2:hover {
+          background: $pink !important;
+        }
+
+        &.d3:hover {
+          background: $darkgreen !important;
+        }
+
+        &.d4:hover {
+          background: $yellow !important;
+        }
+
+        &.d5:hover {
+          background: $orange !important;
+        }
+
+        &.d6:hover {
+          background: $blue3 !important;
+        }
+
+        &.d7:hover {
+          background: $blue4 !important;
+        }
+      }
+    }
+
+    // @media screen and (max-width: 991px) {
+    //   padding: 1.25rem 2rem !important;
+    // }
+  }
+
+  .logo-wrapper {
+    padding-top: 0.5rem !important;
+    padding-left: 2% !important;
+
+    @media screen and (max-width: 991px) {
+      padding-left: 3% !important;
+    }
+
+    background: none !important;
+
+    .logo {
+      width: 3.9em !important;
+    }
+  }
+
+  .right {
+    margin-right: 2.5% !important;
+  }
+
+  .search {
+    width: 1.5em !important;
+  }
+}
+
+// burger
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0.8rem;
+  margin-top: 20.5px;
+
+  &:focus {
+    outline: none;
+  }
+
+  span {
+    width: 1.5rem;
+    height: 0.15rem;
+    position: relative;
+    transform-origin: 1px;
+    background: white;
+    border-radius: 10%;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+
+  &.open {
+    span {
+      width: 2rem;
+
+      &:first-child {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg) translateY(-150%);
+      }
+
+      &:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg) translateY(150%);
+      }
+    }
+  }
+}
+
+// vertical menu
+.vertical.accordion {
+  height: 100vh !important;
+  border: none !important;
+  border-radius: 0 !important;
+  text-align: center;
+  margin-top: 44px !important;
+
+  &.open {
+    transition: all 0.3s ease-in-out;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.close {
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    display: none !important;
+  }
+
+  .accordion {
+    margin: 0 !important;
+    background-color: initial;
+
+    .item {
+      height: 1px;
+      font-size: 14px;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    .title {
+      padding: 0 !important;
+    }
+
+    .title.active {
+      background-color: $blue !important;
+    }
+  }
+
+  .content.active {
+    padding: 0 !important;
+
+    .item {
+      color: white !important;
+    }
+
+    .item:hover,
+    .item.active {
+      color: white !important;
+    }
+  }
+}
+
+.ui.simple.dropdown {
+  .menu {
+    > .item {
+      text-align: center !important;
+      color: $blue !important;
+
+      &.active {
+        color: $blue !important;
+      }
+    }
+  }
+}
+
+.ui.menu .ui.dropdown .menu > .item {
+  color: $blue !important;
+}
+
+.ui.menu .ui.dropdown .menu > .item:hover {
+  color: white !important;
+}
+
+.ui.menu .dropdown.item .menu {
+  border-radius: 0 !important;
+}
+
+/* Comment this out when O-Idol contestants can already be shown
+.program-menu-item:last-child {
+  pointer-events: none;
+} */

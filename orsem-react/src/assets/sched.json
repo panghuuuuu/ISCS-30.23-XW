@@ -1,0 +1,124 @@
+{
+  "Day Show (Aug 5)": [
+    {
+      "time": "7:00 AM - 7:50 AM",
+      "title": "Registration for SOH, SOSS, and GBSEALD Freshmen"
+    },
+    {
+      "time": "7:50 AM - 8:50 AM",
+      "title": "Mass"
+    },
+    {
+      "time": "8:50 AM - 9:12 AM",
+      "title": "Welcoming Rites"
+    },
+    {
+      "time": "9:12 AM - 9:17 AM",
+      "title": "OrSem Dance"
+    },
+    {
+      "time": "9:17 AM - 9:20 AM",
+      "title": "Welcoming Remarks from the O-Chairs"
+    },
+    {
+      "time": "9:20 AM - 11:50 AM",
+      "title": "Group Dynamics and Ice Breakers #1"
+    },
+    {
+      "time": "11:50 AM - 12:51 PM",
+      "title": "Lunch Show"
+    },
+    {
+      "time": "12:52 PM - 1:01 PM",
+      "title": "OADSA + OVPHE Talk"
+    },
+    {
+      "time": "1:01 PM - 1:04 PM",
+      "title": "Introduction to the Sanggunian"
+    },
+    {
+      "time": "1:04 PM - 1:11 PM",
+      "title": "Dean Remarks"
+    },
+    {
+      "time": "1:11 PM - 1:45 PM",
+      "title": "O-Idol Performances #1 to #6"
+    },
+    {
+      "time": "1:45 PM - 3:45 PM",
+      "title": "Campus Tours"
+    },
+    {
+      "time": "3:45 PM - 5:15 PM",
+      "title": "Group Dynamics and Ice Breakers #2"
+    }
+  ],
+  "Day Show (Aug 6)": [
+    {
+      "time": "7:00 AM - 7:50 AM",
+      "title": "Registration for SOM and SOSE"
+    },
+    {
+      "time": "7:50 AM - 8:50 AM",
+      "title": "Mass"
+    },
+    {
+      "time": "8:50 AM - 9:12 AM",
+      "title": "Welcoming Rites"
+    },
+    {
+      "time": "9:12 AM - 9:17 AM",
+      "title": "OrSem Dance"
+    },
+    {
+      "time": "9:17 AM - 9:20 AM",
+      "title": "Welcoming Remarks from the O-Chairs"
+    },
+    {
+      "time": "9:20 AM - 11:50 AM",
+      "title": "Group Dynamics and Ice Breakers #1"
+    },
+    {
+      "time": "11:50 AM - 12:51 PM",
+      "title": "Lunch Show"
+    },
+    {
+      "time": "12:52 PM - 1:01 PM",
+      "title": "OADSA + OVPHE Talk"
+    },
+    {
+      "time": "1:01 PM - 1:04 PM",
+      "title": "Introduction to the Sanggunian"
+    },
+    {
+      "time": "1:04 PM - 1:11 PM",
+      "title": "Dean Remarks"
+    },
+    {
+      "time": "1:11 PM - 1:45 PM",
+      "title": "O-Idol Performances #1 to #6"
+    },
+    {
+      "time": "1:45 PM - 3:45 PM",
+      "title": "Campus Tours"
+    },
+    {
+      "time": "3:45 PM - 5:15 PM",
+      "title": "Group Dynamics and Ice Breakers #2"
+    }
+  ],
+  "O-Night (Aug 6)": [
+    {
+      "time": "4:30 PM",
+      "title": "Registration for Day 1 Freshies and Upperclassmen"
+    },
+    {
+      "time": "5:15 PM",
+      "title": "Registration for Day 2 Freshies"
+    },
+    {
+      "time": "5:30 PM - 8:30 PM",
+      "title": "O-Night Program"
+    }
+  ]
+}

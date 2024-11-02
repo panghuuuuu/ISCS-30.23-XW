@@ -1,0 +1,118 @@
+@import "./variables";
+
+$orange: #fa4204;
+$dirtyWhite: #fff3e9;
+
+.container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 2vw;
+
+  .header {
+    color: $pink;
+    width: 50%;
+    h1 {
+      font-size: $header-size;
+    }
+
+    h2 {
+      font-size: $header2-size;
+    }
+    p {
+      font-size: 15px !important;
+    }
+  }
+
+  .btn-wrapper {
+    display: flex;
+    margin-top: 2em;
+    text-transform: capitalize;
+    a {
+      color: white;
+    }
+
+    .vote-btn {
+      background: $pink;
+      padding: 0.5rem 3em;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 3rem;
+      border: none;
+      cursor: pointer;
+    }
+    .idol-btn {
+      background: $orange;
+      padding: 1rem 2rem;
+      margin-left: auto;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 3rem;
+      border: none;
+      cursor: pointer;
+      color: white;
+    }
+  }
+  .coming-soon{
+    margin-top: 2em;
+    margin-bottom: 4em;
+  }
+  .contestant-panel {
+    display: flex;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    padding: 3em 5em;
+    h1 {
+      font-size: $header-size;
+      color: $orange;
+    }
+    p {
+      font-size: 15px !important;
+      color: #fc7051;
+    }
+    .contestant-photo {
+      flex: 20%;
+      margin-right: 5em;
+      text-align: center;
+      background-color: $yellow;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      img {
+        max-width: 20rem;
+        object-fit: cover;
+      }
+    }
+
+    .contestant-details {
+      .name h2 {
+        margin-bottom: 1rem;
+        margin-top: 2vw;
+        color: $darkblue !important;
+        text-align: left;
+      }
+      .course h2 {
+        text-transform: capitalize;
+        font-size: 30px;
+        font-weight: bold;
+        color: $darkblue !important;
+        margin-bottom: 1em;
+        text-align: left;
+      }
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .contestant-photo {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    .contestant-panel {
+      padding: 1em 4em;
+      flex-wrap: wrap;
+    }
+  }
+}

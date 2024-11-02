@@ -1,0 +1,4 @@
+INSERT INTO public.authentication_user (password, first_name, last_name, is_superuser, is_staff, is_active, date_joined, email, secret_key)
+VALUES
+( 's4mpl3p4ss', 'Franco Manuel', 'Velasco', true, true, true, '2021-08-11 03:17:37.955294-08', 'franco.velasco@obf.ateneo.edu',
+'@l7#l8=sb4-&n20#6_u6i@6!##8std-qyp^&#jp*m+m60y(v&4');

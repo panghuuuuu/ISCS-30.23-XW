@@ -1,0 +1,47 @@
+@import './_variables.scss';
+@import './App.scss';
+
+.post-card-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+
+  .post-card-image {
+    width: 100%;
+    height: 200px;
+    background: url('../assets/01 Home/01 Muli Banner.webp');
+    background-size: cover;
+    background-position: center;
+  }
+  .og-post {
+    display: block;
+    visibility: visible;
+  }
+  .short-post {
+    display: none;
+    visibility: hidden;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    flex-direction: row;
+    height: 300px;
+    margin-bottom: 2.5rem;
+
+    .post-card-image {
+      width: 45%;
+      height: 100%;
+    }
+  }
+  @media screen and (min-width: $mobile-large-breakpoint) {
+    .short-post {
+      display: block;
+      visibility: visible;
+    }
+    .og-post {
+      display: none;
+      visibility: hidden;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+@import "./_variables.scss";
+
+.footer {
+  bottom: 0;
+  background: $blue;
+  padding-top: 2%;
+
+  .accordion {
+    color: none !important;
+    padding: inherit !important;
+    width: inherit !important;
+    font-size: inherit !important;
+    margin-top: 0 !important;
+    background-color: inherit !important;
+
+    .active {
+      background-color: #faa400 !important;
+      text-align: center;
+    }
+  }
+
+  .grid {
+    width: 95% !important;
+    margin: -1rem auto !important;
+
+    .row {
+      padding-bottom: 5%;
+
+      // override with breakpoints
+      @media screen and (max-width: 768px) {
+        flex-direction: column !important;
+      }
+    }
+
+    .column {
+      padding: 0 !important;
+    }
+  }
+
+  .footer-title {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .footer-credits {
+    background-color: #faa400;
+    color: white;
+    text-align: center;
+
+    p {
+      font-size: 1.05rem;
+      padding: 0 1.5em;
+    }
+
+    padding: 1% 0 1% 0;
+  }
+
+  .item {
+    text-transform: capitalize;
+    color: white !important;
+    font-weight: 400;
+
+    @media screen and (max-width: 768px) {
+      text-transform: uppercase;
+      margin: 0.75em;
+
+      &:nth-child(7) {
+        display: none;
+      }
+    }
+  }
+
+  .program-item {
+    padding: 2% 7% 2% 0;
+  }
+
+  .program-item {
+    padding: 1% 7% 2% 0;
+  }
+
+  .logo-col {
+    .logo {
+      width: 4em;
+      height: 100%;
+    }
+
+    .logo-copyright {
+      color: white;
+      font-size: medium;
+
+      br:first-child {
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .logo-col,
+  .pages-col {
+    @media screen and (max-width: 768px) {
+      width: 100% !important;
+      text-align: center;
+      margin: 0.5rem 0 !important;
+    }
+
+    >table {
+      @media screen and (max-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .footer-title {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  .contact-col {
+    p {
+      color: white;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .social-item {
+    padding: 3px;
+  }
+}
+
+a.item.active {
+  background-color: transparent !important;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.pages-col table td {
+  padding-right: 2vw;
+  /* You can adjust the value to your desired margin size */
+}
+
+.footer-mail:hover,
+.social-item:hover,
+.item:hover {
+  color: #898fe5 !important;
+}

@@ -1,0 +1,19 @@
+INSTRUCTIONS FOR RUNNING THE WEBSITE
+
+DJANGO:
+1. Go to the orsem folder
+2. Run your command line of choice
+3. Create a Python virtual environment using the command "python3 -m venv name-of-environment"
+4. Run the line "name-of-environment\Scripts\Activate". This should put you inside the Python environment.
+5. Run the line "pip install -r requirements-updated.txt". This will install all the libraries and modules needed for the website.
+	5.1 Install necessary libraries as needed if the install is insufficient.
+6. Run the line "python manage.py makemigrations --settings=orsem.bsettings". This should compile all the changes and loads the application.
+7. Run the line "python manage.py migrate --run-syncdb --settings=orsem.bsettings". This should apply all the migrations and changes in the application.
+8. Run the line "python manage.py runserver --settings=orsem.bsettings". This should lead you to the prompt of the command line that it is running at 127.0.0.1:8000 and the server is running.
+
+REACT:
+1. Go to the orsem-react folder
+2. Run your command line of choice
+3. Run the line "npm install"
+	3.1 Install necessary modules as needed if the install is insufficient
+4. Run the line "npm start". This should load the React library and open a browser with the website.

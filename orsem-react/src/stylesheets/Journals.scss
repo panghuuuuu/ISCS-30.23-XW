@@ -1,0 +1,128 @@
+@import "./_variables.scss";
+
+.combined-section {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 100%; 
+  z-index: 1; 
+}
+
+
+button.readmore-button {
+  color: #fffaed;
+  background-color: #fb0200; 
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1em;
+  padding-right: 1rem;
+  border-radius: 5px;
+}
+
+.category-buttons-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  margin-top: 1rem;
+}
+
+.category-button {
+  display: inline-block;
+}
+
+.btn-category {
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 20px; 
+  font-size: 14px;
+  transition: background-color 0.3s ease; 
+}
+
+//elements
+
+.wave1-container {
+  width: 35%; 
+  height: auto;
+  transform: translate(0%, 10%); 
+}
+
+.wave2-container{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+  height: auto;
+  transform: translate(0%, 0%); 
+}
+
+.butterfly1-container{
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  height: auto;
+  transform: translate(35%, 0%); 
+  @media (max-width: 768px) {
+    width: 15%;
+    transform: translate(20%, -10%);
+  }
+}
+
+.butterfly2-container{
+  position: absolute;
+  right: 0;
+  width: 10%;
+  height: auto;
+  transform: translate(-80%, 40%); 
+  @media (max-width: 768px) {
+    width: 15%;
+    transform: translate(10%, 70%);
+  }
+}
+
+.outline1-container{
+  position: absolute;
+  width: 20%;
+  height: auto;
+  transform: translate(30%, 65%); 
+  z-index: 1;
+}
+
+.outline2-container{
+  position: absolute;
+  width: 20%;
+  height: auto;
+  padding: 1rem; 
+  transform: translate(40%, 40%); 
+  z-index: 1;
+}
+
+.outline3-container{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  height: auto;
+  transform: translate(-50%, 35%); 
+  @media (max-width: 768px) {
+    transform: translate(-60%, 40%);
+  }
+}
+
+.person1-container{
+  position: absolute;
+  right: 0;
+  width: 35%; 
+  height: auto;
+  padding: 1rem;
+  transform: translate(0%, 45%); 
+  z-index: 1;
+}
+
+.person2-container{
+  position: absolute;
+  width: 15%; 
+  height: auto;
+  transform: translate(130%, 30%); 
+}

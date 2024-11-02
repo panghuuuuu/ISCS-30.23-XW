@@ -1,0 +1,121 @@
+@import "./_variables.scss";
+@import "./App.scss";
+
+$privacy-padding-y: 3rem;
+$privacy-padding-x: 4rem;
+
+.modal-class {
+  z-index: 999;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  right: 50px;
+  bottom: 10px;
+  background-color: $yellow;
+  display: flex;
+  flex-direction: column;
+
+  .privacy-header {
+    padding: $privacy-padding-y $privacy-padding-x;
+
+    h1 {
+      font-size: 72px;
+      margin: 0;
+      color: white;
+    }
+  }
+
+  .privacy-policy-description {
+    height: 80%;
+    padding: $privacy-padding-y $privacy-padding-x;
+    font-size: 16px;
+    background-color: white;
+    color: $blue;
+    overflow-y: auto;
+  }
+
+  .privacy-accept {
+    padding: $privacy-padding-y $privacy-padding-x;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    .button-class {
+      border: none;
+      border-radius: 48px;
+      padding: 1.2rem 3rem;
+      font-size: 1.8em;
+      font-weight: 600;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: $font-size--1 * 0.8;
+      padding: 0.5rem 2rem;
+    }
+  }
+}
+
+.modal-overlay-class {
+  z-index: 500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .modal-class {
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 2rem;
+    justify-content: space-around;
+
+    .privacy-header {
+      padding: 0;
+      margin-bottom: 2rem;
+      h1 {
+        text-align: center;
+        font-size: 36px;
+        margin: auto;
+        color: $blue;
+      }
+    }
+
+    .privacy-policy-description {
+      min-height: 30%;
+      max-height: 70%;
+      padding: 0;
+      font-size: 12px;
+    }
+
+    .privacy-accept {
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+      color: $blue;
+      margin-top: 2rem;
+
+      .button-class {
+        color: white;
+        border: none;
+        border-radius: 48px;
+        padding: 1rem 2rem;
+        font-size: 1em;
+        font-weight: 600;
+      }
+
+      span {
+        font-size: 12px;
+        margin: 0;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

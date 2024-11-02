@@ -1,0 +1,902 @@
+{
+  "pages": [
+    {
+      "id": "Arete",
+      "mainDesc": [
+        "Across Leong Hall is the creativity and innovation hub of Ateneo. Areté features the George SK Ty Learning Innovation Wing, where the Le Cordon Bleu can be found and Arts Wing, where you can find the Ateneo Arts Gallery (AAG) containing hundreds of art pieces. Fine Arts exhibits, classes, and events are also held here!"
+      ],
+      "rooms": [
+        {
+          "building": "George SK Ty Learning Innovation Wing",
+          "rooms": [
+            "Le Cordon Bleu-Ateneo",
+            "Department of Fine Arts",
+            "Joselita and Olivia Campos Interactive Teaching Lab",
+            "Eduardo J. Aboitiz Sandbox Zone",
+            "Classrooms",
+            "Ateneo Science and Art of Learning and Teaching (SALT)",
+            "The Loft"
+          ]
+        },
+        {
+          "building": "Arts Wing",
+          "rooms": [
+            "Ateneo Art Gallery",
+            "Hyundai Hall",
+            "Office of the Artistic Director",
+            "The Doreen Black Box"
+          ]
+        }
+      ],
+      "ateneanStories": [
+        "Studying in the corridors of Arete where we could charge our phones, cool down with the aircon, and enjoy the view of the amphitheatre. - Isa Tagulinao, 4 AB COM",
+        "If you have free time in between classes or you want to hang out with friends after school. Ateneo Art Gallery in Arete is the best hangout spot. Aside from the unique architecture of the building, the museum features modern art from artists and it's a great spot to take pictures. - Joy Paler, 2 BS Lf Sci",
+        "I used to study a lot in arete but that was only because my happy crush hung out there a lot and I wanted to see her hehehe - Liam 5 BS APS MSE",
+        "Dressed up as the winx club with glazky on halloween and we explored the areté museum together during our freshie year! - Kiana Zurc, BS Biology, Batch '27"
+      ],
+      "funFacts": [
+        "Before the construction of Areté, the area was once a cornfield. There is also a parking space on the site called 'cornfield parking.'",
+        "The Ateneo Art Gallery was once housed in the Old Rizal Library. It was established in 1960 and is widely recognized today as the first museum of Philippine modern art. Mainly composed of donations form different artists and philanthropists, the collection now surveys every Philippine art movement in the post-war era."
+      ]
+    },
+    {
+      "id": "SEC A",
+      "imgSrc": "../assets/Map/31.webp",
+      "mainDesc": [
+        "If you are a SOSE student, Zoology might be a word pleasing to the ears, or not? You will find out soon. Good luck!",
+        "The Science Education Complex (SEC) Buildings were built in 1997 to expand the facilities of the Ateneo to cater to the needs of students in the School of Science and Engineering.",
+        "But even if you are not from SOSE, some of your classes like NatSci might be held here! Lucky if your class is at SEC A, it's the only fully airconditioned building among the three SEC Buildings.",
+        "SEC Buildings also open to SEC Walk, Skywalk, and the SEC field. You can find here vending machines and there are photocopying and printing services!"
+      ],
+      "rooms": [
+        {
+          "building": "SEC A",
+          "rooms": [
+            "Escaler Hall",
+            "Department of Biology",
+            "Seminar Rooms / Computer Laboratories",
+            "Department of Mathematics"
+          ]
+        },
+        {
+          "building": "SEC B",
+          "rooms": [
+            "Ecology, Botany, and Zoology Laboratories",
+            "PCI Bank Lecture Hall",
+            "Biology Laboratories"
+          ]
+        },
+        {
+          "building": "SEC C",
+          "rooms": [
+            "Physics Laboratories",
+            "Proctor and Gamble Hall",
+            "Chemistry Laboratories"
+          ]
+        }
+      ],
+      "funFacts": [
+        "SEC Field is in front of the SEC Buildings where student organizations hold projects such as fairs, sales, and live performances.",
+        "SEC Walk is a walkway connecting all the SEC Buildings and spans all the way from Gonzaga Hall to CTC-SOM Building.",
+        "Foot traffic can sometimes get heavy in SEC Walk, and there is Skywalk that you can take as an alternative!"
+      ],
+      "ateneanStories": [
+        "In the theater of SEC-A, my would-be-girlfriend and I made a promise to be each other's fake block crush for the freshie human bingo that our home org hosted. We didn't know that we would be each other's crush eventually! HAHA we kept the papers to this day (kahit na we broke up na :( ) - Karaoke Kween (4 BS LM)"
+      ]
+    },
+    {
+      "id": "SEC B",
+      "imgSrc": "../assets/Map/31.webp",
+      "mainDesc": [
+        "If you are a SOSE student, Zoology might be a word pleasing to the ears, or not? You will find out soon. Good luck!",
+        "The Science Education Complex (SEC) Buildings were built in 1997 to expand the facilities of the Ateneo to cater to the needs of students in the School of Science and Engineering.",
+        "But even if you are not from SOSE, some of your classes like NatSci might be held here! Lucky if your class is at SEC A, it's the only fully airconditioned building among the three SEC Buildings.",
+        "SEC Buildings also open to SEC Walk, Skywalk, and the SEC field. You can find here vending machines and there are photocopying and printing services!"
+      ],
+      "rooms": [
+        {
+          "building": "SEC A",
+          "rooms": [
+            "Escaler Hall",
+            "Department of Biology",
+            "Seminar Rooms / Computer Laboratories",
+            "Department of Mathematics"
+          ]
+        },
+        {
+          "building": "SEC B",
+          "rooms": [
+            "Ecology, Botany, and Zoology Laboratories",
+            "PCI Bank Lecture Hall",
+            "Biology Laboratories"
+          ]
+        },
+        {
+          "building": "SEC C",
+          "rooms": [
+            "Physics Laboratories",
+            "Proctor and Gamble Hall",
+            "Chemistry Laboratories"
+          ]
+        }
+      ],
+      "funFacts": [
+        "SEC Field is in front of the SEC Buildings where student organizations hold projects such as fairs, sales, and live performances.",
+        "SEC Walk is a walkway connecting all the SEC Buildings and spans all the way from Gonzaga Hall to CTC-SOM Building.",
+        "Foot traffic can sometimes get heavy in SEC Walk, and there is Skywalk that you can take as an alternative!"
+      ],
+      "ateneanStories": [
+        "In the theater of SEC-A, my would-be-girlfriend and I made a promise to be each other's fake block crush for the freshie human bingo that our home org hosted. We didn't know that we would be each other's crush eventually! HAHA we kept the papers to this day (kahit na we broke up na :( ) - Karaoke Kween (4 BS LM)"
+      ]
+    },
+    {
+      "id": "SEC C",
+      "imgSrc": "../assets/Map/31.webp",
+      "mainDesc": [
+        "If you are a SOSE student, Zoology might be a word pleasing to the ears, or not? You will find out soon. Good luck!",
+        "The Science Education Complex (SEC) Buildings were built in 1997 to expand the facilities of the Ateneo to cater to the needs of students in the School of Science and Engineering.",
+        "But even if you are not from SOSE, some of your classes like NatSci might be held here! Lucky if your class is at SEC A, it's the only fully airconditioned building among the three SEC Buildings.",
+        "SEC Buildings also open to SEC Walk, Skywalk, and the SEC field. You can find here vending machines and there are photocopying and printing services!"
+      ],
+      "rooms": [
+        {
+          "building": "SEC A",
+          "rooms": [
+            "Escaler Hall",
+            "Department of Biology",
+            "Seminar Rooms / Computer Laboratories",
+            "Department of Mathematics"
+          ]
+        },
+        {
+          "building": "SEC B",
+          "rooms": [
+            "Ecology, Botany, and Zoology Laboratories",
+            "PCI Bank Lecture Hall",
+            "Biology Laboratories"
+          ]
+        },
+        {
+          "building": "SEC C",
+          "rooms": [
+            "Physics Laboratories",
+            "Proctor and Gamble Hall",
+            "Chemistry Laboratories"
+          ]
+        }
+      ],
+      "funFacts": [
+        "SEC Field is in front of the SEC Buildings where student organizations hold projects such as fairs, sales, and live performances.",
+        "SEC Walk is a walkway connecting all the SEC Buildings and spans all the way from Gonzaga Hall to CTC-SOM Building.",
+        "Foot traffic can sometimes get heavy in SEC Walk, and there is Skywalk that you can take as an alternative!"
+      ],
+      "ateneanStories": [
+        "In the theater of SEC-A, my would-be-girlfriend and I made a promise to be each other's fake block crush for the freshie human bingo that our home org hosted. We didn't know that we would be each other's crush eventually! HAHA we kept the papers to this day (kahit na we broke up na :( ) - Karaoke Kween (4 BS LM)"
+      ]
+    },
+    {
+      "id": "",
+      "imgSrc": "",
+      "mainDesc": ["", ""],
+      "rooms": [
+        {
+          "building": "",
+          "rooms": ["", ""]
+        }
+      ],
+      "funFacts": ["", ""],
+      "ateneanStories": ["", ""]
+    },
+    {
+      "id": "College Covered Courts",
+      "imgSrc": "",
+      "mainDesc": [
+        "Freshies, this may be one of the first places you will make lasting memories in!",
+        "Ateneo’s Covered Courts is one of the main venues for OrSem, so expect to hear blasting music and feel the TNT’s energy from far away!"
+      ],
+      "rooms": [
+        {
+          "building": "College Covered Courts / PE Complex",
+          "rooms": [
+            "Dance Area",
+            "Martial Arts Center",
+            "Tennis Court",
+            "Table Tennis Area",
+            "Multi-Purpose Room",
+            "Martial Arts Room",
+            "Weights Gym"
+          ]
+        }
+      ],
+      "ateneanStories": [
+        "There is also a food tent/stall near the covered courts, if you want to try other foods besides in ISO or Gonzaga. - Joy Paler, 2 BS Lf Sci"
+      ],
+      "funFacts": [
+        "The Paseo de Riley is a walkway beside the covered courts that connects LS to the Arrupe International Residences, Loyola School of Theology, and the stairs leading t o the Marikina gate."
+      ]
+    },
+    {
+      "id": "Horacio de la Costa Hall",
+      "imgSrc": "",
+      "mainDesc": [
+        "In the Social Sciences Garden Area, there is the Horacio V. De La Costa SJ Humanities Building, more commonly known as De La Costa or DLC.",
+        "Outside the De la Costa Hall is the statue of Fr. Horacio dela Costa, SJ, who was a known Atenean Scholar and Jesuit. Fr. dela Costa was also a prolific writer and historian, some even considered him to be the Jose Rizal of his time.",
+        "This building holds many Humanities departments as well as the Office of the Dean of the School of Humanities. The English, Filipino, Interdisciplinary Studies, Philosophy, and Theology departments can be found here too!"
+      ],
+      "rooms": [
+        {
+          "building": "Horacio de la Costa Hall",
+          "rooms": [
+            "Department of English",
+            "Department of Phiosophy",
+            "Department of Modern Languages",
+            "Department of Interdesciplinary Studies",
+            "Department of Theology",
+            "Department of Filipino"
+          ]
+        }
+      ],
+      "ateneanStories": [
+        "Most theo/philo classes have orals here, so you'll see a lot of students in the hallways humming their notes while waiting for their turn to be called by their prof. - James, AB EU"
+      ],
+      "funFacts": [
+        "You can see students outside the benches of De la Costa practicing for their orals!",
+        "There are consultation rooms where exams happen."
+      ]
+    },
+    {
+      "id": "Faura Hall",
+      "imgSrc": "",
+      "mainDesc": [
+        "If you have a Physics Lab, expect to be familiar with this building!",
+        "Along Red Brick Road, there stands the Faura Hall which houses the Department of Physics and the Department of Information Systems and Computer Sciences.",
+        "The building was named after Fr. Federico Faura, SJ, founder and first Director of the Manila Observatory who led the first studies into earthquakes in the country. In 1879, the Observatory helped predict typhoon tracks in the Philippines."
+      ],
+      "rooms": [
+        {
+          "building": "Faura Hall",
+          "rooms": [
+            "Faura Audio-Visual Room",
+            "Department of Information Systems and Computer Science",
+            "Department of Physics"
+          ]
+        }
+      ],
+      "funFacts": [
+        "The building was named after Fr. Federico Faura, S.J., founder and the first director of the Manila Observatory. In 1879, the observatory helped predict typhoon tracks in the Philippines. Fr. Faura also led the first studies on earthquakes in the country.",
+        "The Ateneo campus used to be located in the Padre Faura campus in Ermita, Manila before moving to Loyola Heights in 1952. Robinsons Place Manila has a mini Heritage Bell in front of its entrance to signify its past location as a campus."
+      ]
+    },
+    {
+      "id": "Gonzaga Hall",
+      "imgSrc": "",
+      "mainDesc": [
+        "Along the Zen Garden Area, you can also find the Gonzaga Hall which houses the AMPC Cafeteria. It is also called Gonzaga or Gonz.",
+        "Blue & Gold Cafeteria is another canteen that you can find on the second floor and just like there is a Matteo Down and Matteo Up, we also have Gonz Down and Gonz Up.",
+        "Near the parking lot is the Gonzaga Chapel or the Immaculate Conception Chapel which has become a sanctuary for students, faculty, and staff of the Ateneo."
+      ],
+      "rooms": [
+        {
+          "building": "1/F",
+          "rooms": [
+            "AMPC Cafeteria and Offices",
+            "Immaculate Conception Chapel"
+          ]
+        },
+        {
+          "building": "2/F",
+          "rooms": [
+            "Office of Social Concern and Involvement Satellite office",
+            "LS Gender Hub",
+            "Table Tennis Training area"
+          ]
+        },
+        {
+          "building": "3/F",
+          "rooms": [
+            "Fine Arts Exhibit Hall",
+            "Dance Studio",
+            "Fine Arts Theater"
+          ]
+        }
+      ],
+      "funFacts": [
+        "The walkaway between Gonzaga Hall and the chapel is a quiet zone.",
+        "Mass schedule: Monday to Friday 12:00NN",
+        "There is a somewhat hidden adoration chapel with A/C at the back where you may also pray."
+      ]
+    },
+    {
+      "id": "Henry Lee Irwin Theater",
+      "imgSrc": "",
+      "mainDesc": [
+        "Having a seating capacity of 1,131, the Henry Lee-Irwin Theater is Ateneo's premier venue for the performing arts.",
+        "It houses major events such as musical shows, conventions, and award ceremonies."
+      ]
+    },
+    {
+      "id": "JGSOM",
+      "imgSrc": "",
+      "mainDesc": [
+        "The John Gokongwei School of Management (JGSOM) Building is a project funded by John Gokongwei in 2002. It was established when the School of Management was created as a result of the restructuring of the School of Arts and Sciences.",
+        "Similar to the CTC Building, JGSOM also has an elevator and rooms that are air-conditioned! Students entering SOM classrooms in this building are required to follow a stricter dress code."
+      ],
+      "rooms": [
+        {
+          "building": "JGSOM Building",
+          "rooms": [
+            "Office of the Dean of JGSOM",
+            "JGSOM School of Management Business Accelerator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JSEC",
+      "imgSrc": "",
+      "mainDesc": [
+        "In between Matteo Ricci and CTC is the JGSOM Student Enterprise Center or what we typically call 'JSEC.' It was built in 2007 to serve as a business laboratory for all Ateneans (Yes, not just to JGSOM students!) where stalls were given to participants through a series of business competitions called the JSEC Challenge."
+      ],
+      "ateneanStories": [
+        "JSEC! I loved hanging out with my teammates and playing board games with them while we ate lunch together :)) - Iya Javelosa, 4 AB PSY"
+      ],
+      "funFacts": [
+        "It used to be called SOM mall!",
+        "They used a paper currency to pay for food.",
+        "You can also book a Grab here!"
+      ]
+    },
+    {
+      "id": "ISO",
+      "imgSrc": "",
+      "mainDesc": [
+        "The Institute of Social Order or ISO is the go-to of Ateneans for the photocopying and printing services. There is also the ISO Cafeteria where you find home-cooked meals!",
+        "This building also houses various NGOs."
+      ],
+      "funFacts": [
+        "A lot of Ateneans can attest that the ISO has the best sisig!"
+      ],
+      "ateneanStories": [
+        "I had my first (official) date ever here in ISO, where I also received a call that I got shortlisted for a scholarship I was applying for. Ate their famous sisig to celebrate! - Anonymous, BS CH-MSE, Batch '26"
+      ]
+    },
+    {
+      "id": "Kostka Hall",
+      "imgSrc": "",
+      "mainDesc": [
+        "Are you a scholar or just have admission concerns? Or maybe you need help with shifting or load revision?",
+        "Along the Zen Garden Area, you can find the Kostka Hall or simply Kostka where the Office of Admissions and Aid and the Office of the Associate Dean for Academic Affairs stand."
+      ],
+      "rooms": [
+        {
+          "building": "1/F",
+          "rooms": [
+            "Office of Admissions and Aid (OAA)",
+            "Office of the Assistant VP for Undergraduate Education in Higher Education",
+            "Office of the Assistant VP for Graduate Education in Higher Education"
+          ]
+        }
+      ],
+      "funFacts": [
+        "Kostka Extension or KostEx holds a printing station and tables which are sometimes used by orgs for activities."
+      ]
+    },
+    {
+      "id": "Leong Hall",
+      "imgSrc": "",
+      "mainDesc": [
+        "Across Arete is the Leong Hall. Located here are most of the Social Sciences departments in Ateneo such as the Departments of Anthropology, Sociology, Chinese Studies, Development Studies, and Diplomacy and International Relations.",
+        "It started as an initiative to foster a center for Chinese Studies at the University through an endowment from Mr. Ricardo and Dr. Rosita Leong.",
+        "The building was completed within 10 months of its construction date and has an elevator. It houses the Leong Hall Auditorium, Ateneo Center for Asian Studies, Office of the Dean of School of Social Sciences, and the Leong Hall Roof Deck."
+      ],
+      "rooms": [
+        {
+          "building": "1/F",
+          "rooms": [
+            "Department of Sociology and Anthropology",
+            "Leong hall Auditorium"
+          ]
+        },
+        {
+          "building": "2/F",
+          "rooms": [
+            "Chinese Studies Program",
+            "Department of History",
+            "Japanese Studies Program",
+            "Ateneo Center for Asian Studies"
+          ]
+        },
+        {
+          "building": "3/F",
+          "rooms": [
+            "Department of Political Science",
+            "Department of Psychology",
+            "European Studies Program",
+            "Ateneo Initiative for Korean Studies"
+          ]
+        },
+        {
+          "building": "4/F",
+          "rooms": [
+            "Development Studies Program",
+            "Department of Economics",
+            "Office of the Dean of SOSS (Dr. Czarina A. Saloma-Akpedonu)"
+          ]
+        },
+        {
+          "building": "5/F",
+          "rooms": ["Leong Hall Roofdeck"]
+        }
+      ]
+    },
+    {
+      "id": "LST",
+      "imgSrc": "",
+      "mainDesc": [],
+      "ateneanStories": [
+        "[It is] the best place for street food (fishballs, etc!), an amazing view!"
+      ]
+    },
+    {
+      "id": "MVP Center for Student Leadership",
+      "imgSrc": "mvp",
+      "mainDesc": [
+        "If you are an org-active student, this will definitely be your home once they start onsite operations!",
+        "The Manuel V. Pangilinan Center for Student Leadership or MVP houses the rooms for 56 organizations in Ateneo. It also serves as the main headquarters of the Sanggunian ng mga Paaralang Loyola ng Ateneo de Manila (Sanggu), the Council of Organizations of the Ateneo (COA), and the League of Independent Organizations (LIONS). Each organization has their own org room where, prior to the pandemic, you can hang out or have meetings with your orgmates!",
+        "Org culture in Ateneo is very much alive. And maybe with the incoming RecWeek, you might find yourself joining a few orgs?",
+        "Not only that, if you want to find some Ateneo merchandise, you can find and buy them at LS Bookstore located on the basement floor!"
+      ],
+      "rooms": [
+        {
+          "building": "First Floor and Second Floor",
+          "rooms": [
+            "LS Bookstore",
+            "Office of the Associate Dean for Student Formation",
+            "Office of Student Activities",
+            "Office for Social Concern and Involvement",
+            "Office of the Campus Ministry",
+            "Department of Social Welfare and Services"
+          ]
+        },
+        {
+          "building": "Third and Fourth Floor",
+          "rooms": [
+            "Jesuit Volunteers Philippines Foundation, Inc. (JVP) National Office",
+            "Student Organization Rooms"
+          ]
+        },
+        {
+          "building": "Fifth Floor",
+          "rooms": ["Colayco Hall (MVP Roofdeck)"]
+        }
+      ],
+      "funFacts": [
+        "The center of org life and where you will meet your orgmates, talk and play with them!",
+        "The Department of Student Welfare and Services (DSWS) has services for lost and found, carpooling services, lockers, book sales, and item lending. You can also reserve promo board slots here."
+      ],
+      "ateneanStories": [
+        "My fav hang out spot is MVP hands down! Can’t really beat org life, but a really close second is Matteo Up because of how cozy it is! - Mar, 4 AB COM"
+      ]
+    },
+    {
+      "id": "Moro Lorenzo Football Field",
+      "imgSrc": "",
+      "mainDesc": [
+        "The Moro Lorenzo Football Field is where UAAP football tournaments are occasionally held and it has its own drainage system to avoid flooding on the field."
+      ]
+    },
+    {
+      "id": "Matteo Ricci Study Hall",
+      "imgSrc": "matteo",
+      "mainDesc": [
+        "Between SEC B and SEC C is the Matteo Ricci Study Hall, 'Matteo Ricci' or 'Matteo' for short. It was built in 2004 and as the name suggests, serves as a study place for students!",
+        "There are individual study rooms and computer laboratories on the first floor, or 'Matteo Down' as we call it where you can study solo or just quietly by group. The second floor, or 'Matteo Up', has group study tables both indoor and outdoor. You can see students reviewing for Calculus classes, practicing for orals, or just finding a good spot for Wi-Fi.",
+        "You can also find power outlets for charging and even a gender-neutral bathroom!"
+      ],
+      "ateneanStories": [
+        "Tried out Matteo Up All Night with my bio friends while studying for our chem final and I basically lost my sanity in the process. We all left at 5 am the next day and spoiler alert: nothing we studied for even showed up in the exam lol - Kiana Zurc, BS Biology, Batch '27"
+      ],
+      "rooms": [
+        {
+          "building": "first floor",
+          "rooms": ["individual study rooms", "computer labs"]
+        },
+        {
+          "building": "second floor",
+          "rooms": ["group study rooms (indoors and outdoors)"]
+        }
+      ],
+      "funFacts": ["Matteo Ricci is open 24/7 during midterm and finals week!"]
+    },
+    {
+      "id": "New Rizal Library",
+      "imgSrc": "NewRizal",
+      "mainDesc": [
+        "Near the De la Costa Hall along the Social Sciences Garden Area, you will find the First Pacific Hall - New Rizal Library.",
+        "The New Rizal or New Lib for short was built to accommodate the growing number of students on the campus. Not only does it have couches that are comfortable enough to take a nap in, but it also has some of the best bathrooms in Ateneo.",
+        "The building is integrated with an environment-friendly system to its structure. Rainwater is collected on the roof and stored underground for flushing the toilets in the library."
+      ],
+      "funFacts": [
+        "The New Lib is one of the favorite study spots of Ateneans!",
+        "The whole building is air conditioned!",
+        "The library was built over Meron Pond, indicative of a 'pond' showing up (meron) only when it rains. It was popularized by Fr. Roque Ferriols, S.J.. He is one of the pioneers of the Filipinization movement in Ateneo that advocated for the teaching of philosophy in the Filipino language.",
+        "The New Rizal Library is integrated with an environment-friendly system to its structure. Rainwater is collected at the roof and stored underground for flushing the toilets in the library."
+      ],
+      "rooms": [
+        {
+          "building": "1/F",
+          "rooms": [
+            "Food Stalls outside the library",
+            "Reference and Information Systems",
+            "Graduate and Faculty section"
+          ]
+        },
+        {
+          "building": "2/F",
+          "rooms": [
+            "Photocopier",
+            "Foreign Serials",
+            "Multimedia Room",
+            "Multimedia Resource Center"
+          ]
+        },
+        {
+          "building": "3/F",
+          "rooms": ["Printing", "Information commons and General Circulations"]
+        },
+        {
+          "building": "4/F",
+          "rooms": [
+            "Photocopier",
+            "Printing",
+            "Information commons and General Circulations"
+          ]
+        },
+        {
+          "building": "5/F",
+          "rooms": ["Study Hall"]
+        }
+      ],
+      "ateneanStories": [
+        "My friends Vince and Elle and I make it a habit to go to NRL 2nd Floor and book a room for the three of us to watch a movie and banter 'til 3 PM (kasi may class pa after TT). Y'all should try too! It's time well spent <3 - Justin Gonzaga, AB PSY, Batch '26"
+      ]
+    },
+    {
+      "id": "Eliazo Hall",
+      "imgSrc": "",
+      "mainDesc": [
+        "Eliazo Hall is the dormitory for female university and SHS dormers."
+      ],
+      "funFacts": ["Named after Fr. Jose Ma. Eliazo, S.J."]
+    },
+    {
+      "id": "Old Communications Building",
+      "imgSrc": "",
+      "mainDesc": [
+        "Next to Covered Courts is the Old Communications Building. Also called Fine Arts Annex or FA Annex, the building contains classrooms for Fine Arts classes as well as the LS Physical Education Office.",
+        "It also has the FA Annex Black Box Theatre where plays from Ateneo theater organizations are showcased."
+      ],
+      "funFacts": [
+        "'Mens sana in corpore sano' which you may find printed on your PE shirts, is a Latin phrase that means 'a sound mind in a sound body.' Your Ateneo education will not only take care of your intellectual formation but also your Physical wellness. This is because Ateneo takes to heart the Ignatian maxim of Cura Personalis or 'caring for the entire person.'"
+      ]
+    },
+    {
+      "id": "CTC",
+      "imgSrc": "PLDT",
+      "mainDesc": [
+        "Near the JGSOM Building and the SEC Buildings is the PLDT-Convergence Technologies Center or the CTC building! It houses classrooms and laboratories.",
+        "It also has sustainable design features, such as the installation of solar panels for energy conservation and a rainwater collection system."
+      ],
+      "rooms": [
+        {
+          "building": "PLDT-CTC",
+          "rooms": [
+            "Department of Electronics, Computer, & Communications Engineering",
+            "Konrad Adenauer Asian Center for Journalism",
+            "Department of Health Sciences",
+            "Office of the Dean of School of Science and Engineering"
+          ]
+        }
+      ],
+      "ateneanStories": [
+        "I met my first College Crush while waiting for my next class in the PLDT-CTC building. They were in the class before mine, so as I entered the classroom, they were about to exit through the same door. It was crush at first sight, and I noticed them wearing an org-designed ID lanyard (compared to the common blue Ateneo one). I recognized the org-designed ID lanyard again while in the Arete, and there they were—alone! However, it was now I who was leaving—with my friends—as they were entering. Sadly, that day would also be our last day of regular class for the school year, so it was a crush at 'first' sight—and at 'last'. - Anonymous"
+      ],
+      "funFacts": [
+        "Both CTC and the JGSOM building did not have air-conditioning until 2015, when the building was renovated and added two more floors. The structure for both buildings was designed to include provisions for such renovations. That's why there are ceiling fans on the first three floors!",
+        "SOM FOrest serves as a connection between JSEC, JGSOM, CTC, Faura Hall, and the New Rizal Library, it is a buffer between the LS and the busy Katipunan Avenue and one of the most accessed green spaces on the campus!"
+      ]
+    },
+    {
+      "id": "Faber Hall",
+      "imgSrc": "path/to/faber.png",
+      "mainDesc": [
+        "Behind the Old Rizal Library is Faber Hall which houses the Rizal Mini Theater and various central administration offices. Major theater productions by various student theater groups are held here."
+      ],
+      "rooms": [
+        {
+          "building": "1/F",
+          "rooms": [
+            "Rizal Mini Theater",
+            "University Archives",
+            "Faber Hall Function Room"
+          ]
+        },
+        {
+          "building": "2/F",
+          "rooms": ["Central Accounting Office", "Administrative Offices"]
+        },
+        {
+          "building": "3/F",
+          "rooms": [
+            "Office of International Relations (OIR)",
+            "Office of the Vice President Department of Information Technology Services (OVP-DITS)"
+          ]
+        }
+      ],
+      "ateneanStories": [
+        "I really love hanging out behind Faber Hall/RMT. That small space near St. Thomas Moore is such a peaceful spot, especially when you're just there to rest (and not wait for the rehearsal break to end). I'd go there earlier than the usual call time for weekend rehearsals just so I can take in the morning air while having my first iced coffee of the day. - Sofia Romero, 4 BS PSY"
+      ],
+      "funFacts": [
+        "The University Archives contains a vast record of Ateneo- related documents, including yearbooks, thesis works, and other records",
+        "The Rizal Mini Theater (RMT) holds major theater productions held by various student theater groups in the Ateneo. It used to be situated on the third floor of Gonzaga Hall prior to its relocation!"
+      ]
+    },
+    {
+      "id": "Schmitt Hall",
+      "imgSrc": "",
+      "mainDesc": [
+        "If you are a Chemistry major, this will most likely be your home!",
+        "You can find it just in front of the SEC Field and at the end of Red Brick Road. Schmitt Hall houses specialized Chemistry laboratories and most introductory Chemistry classes are held here."
+      ],
+      "rooms": [
+        {
+          "building": "Schmitt Hall",
+          "rooms": [
+            "Department of Chemistry",
+            "National Chemistry Instrumentation Center (NCIC)",
+            "General Chemistry Laboratories",
+            "Analytical and Biochemical Laboratories"
+          ]
+        }
+      ],
+      "funFacts": [
+        "The faculty room and pigeon holes are located half way up the staircase!"
+      ]
+    },
+    {
+      "id": "Xavier Hall",
+      "imgSrc": "",
+      "mainDesc": [
+        "In front of Bellarmine Field is the Xavier Hall which houses the administrative offices of the Loyola Schools.",
+        "Here you can find the Office of the Vice President of the Loyola Schools Dr. Maria Luz C. Vilches and the Office of the President Fr. Roberto Yap.",
+        "This is also one of the main stops of the University E-jeep."
+      ],
+      "rooms": [
+        {
+          "building": "1/F",
+          "rooms": [
+            "Student Info desk",
+            "Office of the Associate Dean for Student Affairs (OADSA)",
+            "Cashier",
+            "Office of the Vice President for Higher Education (Dr. Maria Luz C. Vilches)"
+          ]
+        },
+        {
+          "building": "2/F",
+          "rooms": [
+            "Administrative offices",
+            "Office of the President (Fr. Roberto Yap, S.J.)"
+          ]
+        }
+      ],
+      "funFacts": [
+        "The Office of the Associate Dean for Student Affairs (OADSA) offers services such as lost and found for valuable items, security concerns, and ID-related concerns. You can also settle your hold orders here."
+      ]
+    },
+    {
+      "id": "Zen Garden",
+      "imgSrc": "path/to/zen.jpg",
+      "mainDesc": [
+        "If you need a place to relax and relieve yourself of stress, this garden is for you!",
+        "Bounded by Kostka, Xavier, Berchman, and Gonzaga Buildings is a hangout area, which is Zen Garden.",
+        "You will possibly walk past here every day to get from one class to the next. It is one of the many places where you can spend time with friends and have some conversations!"
+      ],
+      "funFacts": [
+        "Itchyworms got their name in Zen Garden since they always practiced together here. One day it rained, higad or itchy worms fell while they were practicing, and they were called Itchyworms ever since.",
+        "Located in Zen Garden is Dog House, a small gazebo with a table and chairs that students can stay at and orgs use for activities. Before the Gesu was built, school-wide masses were held here.",
+        "This place used to be called Doll House as this was where queers used to stay for their tambayan."
+      ]
+    },
+    {
+      "id": "Social Sciences Building",
+      "imgSrc": "path/to/zen.jpg",
+      "mainDesc": [],
+      "rooms": [
+        {
+          "building": "First Floor",
+          "rooms": [
+            "Office of the Registrar",
+            "Loyola Schools Office of Health Services (OHS)",
+            "Case Study Room",
+            "Conference Rooms",
+            "Experimental Psychology Laboratories"
+          ]
+        },
+        {
+          "building": "Second Floor",
+          "rooms": [
+            "LS Office of Guidance and Counseling (LSOGC)",
+            "Office of Placement and Career Services (OPCS)",
+            "Blue Snooze Room"
+          ]
+        },
+        {
+          "building": "Third Floor",
+          "rooms": [
+            "Department of Communication",
+            "Recording Studio",
+            "Department of Education Eugenio Lopez Jr. Center for Multimedia Communication"
+          ]
+        },
+        {
+          "building": "Fourth Floor",
+          "rooms": ["Editing Bays", "Radio Booth"]
+        }
+      ],
+      "funFacts": [
+        "Established in 2002 as a partnership between the Department of Communication and the ABS-CBN Corporation, the Eugenio Lopez Jr. Center for Multimedia Communication houses a studio where TV/Film production, photography, and broadcast communication classes are taught.",
+        "The Blue Snooze Room is a nap room for Ateneo Students, a self-care project by the LS Office of Guidance and Counseling launched in September 2018."
+      ]
+    },
+    {
+      "id": "International Residence Hall",
+      "imgSrc": "path/to/zen.jpg",
+      "mainDesc": []
+    },
+    {
+      "id": "Old Rizal Library",
+      "imgSrc": "OldRizal",
+      "mainDesc": [
+        "If you're fond of historic or Filipiniana collections, this place is definitely for you!",
+        "At the end of Red Brick Road is the Old Rizal Library or Old Lib.",
+        "This was built in 1967 with dedication to Dr. Jose Rizal in hopes of young Ateneans sharing his ideas of freedom and justice for others."
+      ],
+      "rooms": [
+        {
+          "building": "Old Rizal Library",
+          "rooms": [
+            "Ateneo Library of Women's Writings (ALIWW)",
+            "Microform and Digital Resources Center (MDRC)",
+            "American Historical Collection",
+            "Filipiniana Section",
+            "Indexing Section",
+            "Pardo de Tavera Room"
+          ]
+        }
+      ],
+      "funFacts": [
+        "The American-Historical collection is one of the biggest collections of American-period artworks in the country.",
+        "You can visit the microfilm and digital resource center to find newspaper clippings from as early as the 1900s!"
+      ]
+    },
+
+    {
+      "id": "PIPAC",
+      "imgSrc": "PIPAC",
+      "mainDesc": [
+        "Next to Faura Hall and JGSOM Building is the Philippine Institute of Pure and Applied Chemistry (PIPAC).",
+        "It is a scientific institute that conducts chemical research, analysis, and training. PIPAC is an independent NGO that is not affiliated with Ateneo. A lot of the Chemistry professors also work there and special permission is needed to enter the building."
+      ],
+      "funFacts": [
+        "PIPAC is an independent NGO that is not affiliated with Ateneo. A lot of the Chemistry professors also work there! You need special permission to enter the building."
+      ]
+    },
+    {
+      "id": "Cervini Canteen",
+      "imgSrc": "",
+      "mainDesc": [
+        "Also called Cervini Car, this canteen is located on the ground floor of Cervini Hall, the on-campus dormitory for male college students of Ateneo."
+      ]
+    },
+    {
+      "id": "Cervini Residence Hall",
+      "imgSrc": "",
+      "mainDesc": [
+        "Cervini Residence Hall is the dormitory for male university and SHS dormers."
+      ],
+      "funFacts": [
+        "Named after Fr. Andrew F. Cervini, S.J., a Jesuit missionary in the Philippines who became the Rector of Ateneo de Cagayan after World War II and aided the reconstruction of the school."
+      ]
+    },
+    {
+      "id": "Church of the Gesu",
+      "imgSrc": "",
+      "mainDesc": [
+        "Church of the Gesu is located within the heart of the campus.",
+        "Gesu is Italian for Jesus. It was named after the mother church of the Jesuits in Rome, which is similarly called the Church of the Gesu.",
+        "University masses and Simbang Gabi are also held here. During the UAAP season, you can also see athletes going to Gesu before and after their game."
+      ],
+      "funFacts": [
+        "The church was built as a triangular structure to signify the identity of the Ateneo (Filipino, Jesuit and Catholic), and with a wide base to signify the outstretched hands of the Sacred Heart of Jesus.",
+        "The stained glass windows incorporated the stained glass retrieved from the old Padre Faura Chapel which was destroyed with the entire Padre Faura campus during World War II.",
+        "The name was derived from the Mother Church of the Jesuits in Rome. The tip of the cross is the highest point on campus. The bell tower next to the Gesu also holds a 23-bell carillon.",
+        "The church recently received the NCCA Haligi ng Dangal in June 2017."
+      ]
+    },
+    {
+      "id": "Bellarmine Hall",
+      "imgSrc": "",
+      "mainDesc": [
+        "Across Xavier Hall and next to Bellarmine Field is the Bellarmine Hall, or more commonly known as Bel.",
+        "It houses the AMPC Satellite, Ateneo University Press, Ateneo de Manila Journals Office, and the Ateneo Bulatao Center for Psychological Services.",
+        "Student organizations and offices use Bellarmine Field for their activities, projects, bazaars, and fairs!"
+      ],
+      "funFacts": [
+        "It was one of the first few buildings in the Loyola Heights campus assigned to the college department after the relocation from Padre Faura.",
+        "It was previously known as Campion Hall and was once a secondary dormitory for male students.",
+        "It is the farthest building from the main Loyola Schools campus. There are classrooms that are slanted which come from the its previous use as the dormitory bathrooms before its renovation."
+      ]
+    },
+    {
+      "id": "Berchman Hall",
+      "imgSrc": "",
+      "mainDesc": [
+        "The Berchmans Hall, Berchmans or Berch for short, stands along the Zen Garden Area.",
+        "You can find here the Office of the Associate Dean for Core Curriculum. There are also 'sunroofs' above the windows of Berch that help block direct sunlight from reaching the classrooms!"
+      ],
+      "rooms": [
+        {
+          "building": "1/F",
+          "rooms": ["Office of the Associate Dean for Core Curriculum (OADCC)"]
+        }
+      ],
+      "funFacts": [
+        "There are 'sunroofs' above the windows of Kostka and Berchman Halls that help block direct sunlight from reaching the classrooms!"
+      ]
+    },
+    {
+      "id": "Blue Eagle Gym",
+      "imgSrc": "",
+      "mainDesc": [
+        "Freshies, if you hope to join any varsity teams, you should remember this building!",
+        "The Blue Eagle Gym is the home to Ateneo's varsity teams. It is also a venue for UAAP."
+      ],
+      "rooms": [
+        {
+          "building": "1/F",
+          "rooms": [
+            "Ateneo Employees and Workers Union",
+            "Campus Security and Mobilization Office"
+          ]
+        },
+        {
+          "building": "3/F",
+          "rooms": ["University Athletics Office"]
+        }
+      ],
+      "funFacts": [
+        "You can fit 7,500 people on its 800 box sets, 1,400 reserve seats and 5,300 bleacher seats!",
+        "Unlike most gymnasiums, the basketball court is oriented perpendicular to the orientation of the building.",
+        "Oldest building in the Ateneo, being built in 1949. Right now (as of 2023-2024), it is currently undergoing renovations."
+      ]
+    },
+    {
+      "id": "University Dorm",
+      "imgSrc": "",
+      "mainDesc": [
+        "The University Dorm is now exclusively for women students only."
+      ],
+      "ateneanStories":[
+        "itll be your home in ateneo! the guards and staff here are so kind and the food in ebais (kainan for dormers) never misses! i love the view + so many study areas u can make use of esp during midterms and finals szn!! we also have our own catdormers inside <3 - Berry, AB IS, Batch '27"
+      ]
+    },
+    {
+      "id": "Swimming Pool",
+      "imgSrc": "",
+      "mainDesc": [""],
+      "funFacts": [
+        "The swimming pool is also called Happee Pool because it was donated by Lamoiyan Corporation (manufacturers of Happee Toothpaste)!"
+      ]
+    }
+  ]
+}

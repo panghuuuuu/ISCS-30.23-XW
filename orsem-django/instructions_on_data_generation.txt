@@ -1,0 +1,12 @@
+HOW TO GENERATE DATA
+check functions.py to change the values of the number of objects created
+
+install django-autofixture
+	pip install django-autofixture
+
+go to shell
+	python manage.py shell
+
+run these commands
+	from adminposts.functions import *
+	generate()

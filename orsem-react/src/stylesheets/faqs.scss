@@ -1,0 +1,133 @@
+@import './_variables.scss';
+
+.page-body {
+  padding: 0 10vw;
+  margin-top: 5rem;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.Faqs {
+  h1 {
+    color: $pink;
+    font-size: $header-size;
+    text-align: center !important;
+  }
+  h4 {
+    margin-top: 0;
+    color: $pink;
+
+    a {
+      color: $pink;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: $pink;
+    }
+  }
+}
+
+p {
+  font-size: $font-size--1;
+}
+
+span.bold {
+  font-weight: bold;
+}
+
+.Faqs {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.questions {
+  display: grid;
+  grid-template-columns: (1fr 1fr);
+  grid-gap: 1rem;
+}
+.accordion {
+  /* background-color: #eee; */
+  color: #ffffff;
+  cursor: pointer;
+  padding: 1.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: $font-size--3;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 2rem;
+  background-color: #faa400;
+  text-align: left;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .question {
+    font-size: $font-size--3;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0px 0.8em 0px 0px;
+  }
+}
+
+.right {
+  color: #150068;
+}
+
+.left {
+  float: left;
+  opacity: 0;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: #fff3e9;
+  overflow: hidden;
+  color: black;
+  text-align: left;
+  display: block;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+  ul {
+    margin: 0;
+    padding-left: 20px;
+    margin-bottom: 1em;
+  }
+}
+
+.upper-illustration-container {
+  text-align: right;
+}
+
+.upper {
+  width: 73vw;
+  height: auto;
+}
+
+.lower-faqs {
+  width: 73vw;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (max-width: 568px) {
+  .Faqs {
+    .panel {
+      padding: 1.5rem 2rem;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+@import "./_variables.scss";
+
+.search-header {
+  width: 100%;
+  height: 10rem;
+  background: $pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 0.2rem;
+  }
+
+  form {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+
+    #search-button-div {
+      position: absolute;
+      right: 0.6rem;
+      top: 0.3rem;
+
+      #search-button-desktop {
+        display: none;
+      }
+
+      #search-button-mobile {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: none;
+        background-image: url("../assets/00 Header_Footer/00 Header - 02 Search Icon Red.png");
+        background-size: cover;
+      }
+    }
+
+    input {
+      width: 100%;
+      padding: 0.8rem;
+      border-radius: 50px;
+      border: none;
+      margin-bottom: 0.5rem;
+      font-size: 0.7em;
+    }
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    height: 20rem !important;
+
+    h1 {
+      font-size: 66px;
+    }
+
+    form {
+      #search-button-div {
+        right: 1rem;
+        top: 1rem;
+
+        #search-button-desktop {
+          display: block !important;
+
+          .button-class {
+            border: none;
+            border-radius: 48px;
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.5em;
+            font-weight: 600;
+          }
+        }
+
+        #search-button-mobile {
+          display: none;
+        }
+      }
+
+      input {
+        padding: 2rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: $laptop-breakpoint) {
+    input {
+      font-size: 18px;
+      padding: 1.5rem;
+    }
+  }
+}
+
+.search-cards-container {
+  width: 100%;
+  padding: 2rem;
+  margin: auto;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    padding: 2rem 3.5rem;
+  }
+}
+
+.search-nav {
+  display: flex;
+  justify-content: center;
+
+  .search-pagination {
+    display: flex;
+    border-radius: 58px;
+    background-color: rgba(160, 222, 150, 0.44);
+    margin-bottom: 3rem;
+    color: black;
+    padding: 0.3rem 0.5rem 0.3rem 0.8rem;
+
+    .active {
+      background: #a0de96;
+      border-radius: 50%;
+    }
+
+    li {
+      list-style-type: none;
+      padding: 1rem 1.4rem;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:hover {
+      color: inherit;
+    }
+  }
+}

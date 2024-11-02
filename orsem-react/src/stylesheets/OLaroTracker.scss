@@ -1,0 +1,462 @@
+@import "./variables";
+@import "./fonts";
+
+.tracker-container {
+  margin-top: 2rem;
+}
+.day-container {
+  background-color: $darkgreen;
+  color: $dirtyWhite;
+  height: 10rem;
+  font-size: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3vw;
+  gap: 2vw;
+  justify-content: space-evenly;
+}
+
+.game-mechanics {
+  li {
+    text-align: left;
+  }
+  li::marker {
+    color: $blue;
+  }
+}
+.indiv-game {
+  max-width: 40vw;
+}
+.game-link {
+  background-color: transparent;
+  padding: 0.5rem;
+  height: 100%;
+  position: relative;
+
+  .game-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(65, 147, 96, 0.929);
+    padding: 1rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+
+  .game-image img {
+    max-width: 10rem;
+    z-index: -1;
+  }
+
+  .game-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 2;
+    padding: 1rem;
+  }
+
+  &:hover {
+    .game-text {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .game-details {
+      opacity: 1;
+      z-index: 3;
+    }
+    .game-title,
+    .game-pts {
+      color: $lightyellow;
+    }
+  }
+}
+
+.game-title,
+.game-pts {
+  color: $orange;
+}
+
+.game-desc {
+  text-align: left;
+  color: $dirtyWhite;
+}
+
+.tracker-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-top: 5vw;
+
+  .header {
+    color: $pink;
+    h1 {
+      font-size: $header-size;
+    }
+
+    h2 {
+      font-size: $header2-size;
+      color: $darkgreen;
+    }
+
+    p {
+      width: 40vw;
+    }
+  }
+
+  .featured-games {
+    width: 75vw;
+    margin-top: 48px;
+
+    h2 {
+      background-color: $orange;
+      color: white;
+      font-size: 36px;
+      text-transform: uppercase;
+      padding: 16px 0;
+      margin: 0;
+    }
+
+    .games-container {
+      display: flex;
+      column-gap: 8px;
+
+      .game {
+        flex: 1 30%;
+        background-color: $dirtyWhite;
+        padding: 16px;
+        margin-top: 8px;
+        text-align: left;
+        color: $orange;
+
+        h3 {
+          font-size: 40px;
+        }
+
+        :hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .game-modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    .modal-content {
+      text-align: left;
+      // width: 50%;
+      padding: 48px 80px;
+      background-color: #fffcfa;
+      position: relative;
+
+      @media (max-width: 500px) {
+        padding: 24px;
+      }
+
+      h3 {
+        font-size: 48px;
+        color: $orange;
+      }
+
+      h4 {
+        font-size: 18px;
+        font-weight: 400;
+        color: #150068;
+      }
+
+      .close-button {
+        // position: absolute;
+        text-align: right;
+        color: $violet;
+        cursor: pointer;
+      }
+      .close {
+        height: 50px;
+        width: 50px;
+        border-radius: 5px;
+        position: relative;
+        &:after {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          content: "\d7";
+          font-size: 50px;
+          color: #5979f6;
+          line-height: 100px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .featured-block {
+    margin: 48px 0;
+    width: 75vw;
+    background-color: $dirtyWhite;
+
+    h2 {
+      background-color: $darkgreen;
+      color: white;
+      font-size: 36px;
+      text-transform: uppercase;
+      padding: 16px 0;
+      margin: 0;
+    }
+
+    .featured-details {
+      display: flex;
+      flex-direction: column;
+      color: $darkgreen;
+      padding: 40px 0;
+
+      span {
+        line-height: 120px;
+        font-weight: bold;
+        font-size: 120px;
+        margin-bottom: 48px;
+
+        @media (max-width: 500px) {
+          font-size: 80px;
+        }
+      }
+
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .scores {
+    width: 28rem;
+    height: 19rem;
+    margin: 20px;
+    background: #419361;
+    justify-content: center;
+    align-items: center;
+
+    .score-point {
+      justify-content: center;
+      flex-shrink: 0;
+      color: #fff3e9;
+      text-align: center;
+      font-family: "Poppins";
+      font-size: 6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .scores-container {
+    width: 75vw;
+    margin: 24px 0 96px 0;
+
+    .block-score {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      height: 80px;
+      font-size: 24px !important;
+      text-transform: uppercase;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: $darkgreen;
+        font-weight: 600;
+        width: 10%;
+        height: 100%;
+      }
+
+      .score-details {
+        height: 100%;
+        width: 90%;
+        background-color: $dirtyWhite;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $darkgreen;
+
+        .points {
+          text-transform: lowercase;
+        }
+
+        p {
+          font-size: 24px !important;
+          margin: 0 36px;
+
+          @media (max-width: 500px) {
+            font-size: 16px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .leaderboard-button {
+    display: inline-flex;
+    padding: 1.28094rem 3.89206rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.49269rem;
+    border-radius: 2.34013rem;
+    background: $darkgreen;
+    height: 50px;
+    margin: 5rem;
+
+    .leaderboard-text {
+      font-size: 24px !important;
+      color: #fffcfa;
+      text-align: center;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+  .component-container {
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+    .date-box {
+      width: 19rem;
+      height: 14rem;
+      margin: 20px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      background: $darkgreen;
+    }
+
+    .date-text {
+      color: #fff3e9;
+      text-align: center;
+      justify-content: center;
+      font-family: "Poppins";
+      font-size: 5rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .game-title {
+      width: 19rem;
+      color: #4283f7;
+      text-align: center;
+      font-family: "Urbanist";
+      font-size: 2.5rem;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+    }
+
+    .game-text {
+      width: 19rem;
+      color: #000;
+      font-family: "Poppins";
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .image-container {
+      padding: 2px;
+      width: 19rem;
+      flex-shrink: 0;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .scores-container,
+    .featured-block,
+    .featured-games {
+      width: 85vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .laro-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .games-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .indiv-game {
+    max-width: 25vw;
+  }
+  .game-link .game-details {
+    opacity: 1;
+    background-color: transparent;
+  }
+  .game-text {
+    opacity: 1 !important;
+    background-color: transparent !important;
+    position: relative !important;
+  }
+  .game-desc {
+    color: black !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .tracker-container {
+    margin-top: 5rem;
+    width: fit-content;
+  }
+  .day-container {
+    padding-right: 0;
+  }
+  .laro-list {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .indiv-game {
+    min-width: 95vw;
+  }
+}

@@ -1,0 +1,112 @@
+// saturated colors
+$blue: #2933CD;
+$pink: #ff0f8a;
+$darkgreen: #00955c;
+$orange: #ff9212;
+$violet: #b527fb;
+
+// base colors
+$lightpink: #ff92ca;
+$lightblue: #00c8ff;
+$yellow: #ffd30d;
+$lightgreen: #20db92;
+$lightviolet: #d58fff;
+$dirtyWhite: #fff3e9;
+
+// accent colors
+$white: #fefefe;
+$lightyellow: #fff390;
+$darkblue: #0040b4;
+
+$gray: #ececec;
+$search-silver: #ececec;
+
+// secondary color palette
+$blue2: #5961d9;
+$blue3: #d1cff7;
+$blue4: #b9bdf1;
+$blue5: #898fe5;
+
+// font-sizes (fixed) for scalability
+// $font-size--9: 3vw;
+// $font-size--8: 2.75vw;
+// $font-size--7: 2.5vw;
+// $font-size--6: 2.25vw;
+// $font-size--5: 2vw;
+// $font-size--4: 1.75vw;
+// $font-size--3: 1.5vw;
+// $font-size--2: 1.25vw;
+// $font-size--1: 1vw;
+
+// for scalability - Arvin Test
+$font-size--9: 3rem;
+$font-size--8: 2.75rem;
+$font-size--7: 2.5rem;
+$font-size--6: 2.25rem;
+$font-size--5: 2rem;
+$font-size--4: 1.75rem;
+$font-size--3: 1.5rem;
+$font-size--2: 1.25rem;
+$font-size--1: 1rem;
+
+// OrSem 2022 Font Sizes
+
+$header-size: clamp(2em, 3.5vw, 3.5em);
+$header2-size: clamp(1.6em, 3vw, 3em);
+
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 11px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 450px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+// $font-size--9: 3vw;
+// $font-size--8: 2.75vw;
+// $font-size--7: 2.5vw;
+// $font-size--6: 2.25vw;
+// $font-size--5: 2vw;
+// $font-size--4: 1.75vw;
+// $font-size--3: 1.5vw;
+// $font-size--2: 1.25vw;
+// $font-size--1: 1vw;
+
+$laptop-breakpoint: 1024px;
+$tablet-breakpoint: 768px;
+$mobile-large-breakpoint: 425px;
+$slick-font-path: "~slick-carousel/slick/fonts/";
+$slick-loader-path: "~slick-carousel/slick/";
