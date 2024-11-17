@@ -1,0 +1,74 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# credentials
+user_credentials.json
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+iya-requirements.txt
+sample_links.csv
+sample_students.csv
+user_credentials.json
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# python cache files
+*.pyc
+migrations/
+
+# log files
+*.log
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# db.sqlite3
+# db.sqlite3
+
+node_modules
+package-lock.json
+auth-test/
+
+.vscode/
+.devcontainer/
+oldenv/
+cmds.txt
+auth-test/
+env/
+
+# environment
+venv/
+.env
+newenv/
+
+.DS_Store
+=======
+# requirements
+iya-requirements.txt
+
+# generate freshies
+sample_links.csv
+sample_students.csv
+
+.DS_Store
+db.sqlite3
+
