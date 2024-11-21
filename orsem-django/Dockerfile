@@ -2,26 +2,17 @@ FROM python:3.10.12-slim-buster
 
 WORKDIR /app/orsem-django
 
-COPY ./orsem-django/ /app/orsem-django/
+COPY . /app/orsem-django
+COPY .env.example /app/orsem-django/.env
 
 RUN python3 -m venv /opt/venv && \
     /opt/venv/bin/pip install --upgrade pip && \
     /opt/venv/bin/pip install -r requirements.txt
 
-EXPOSE 8000
+RUN /opt/venv/bin/pip install gunicorn
 
-ENTRYPOINT ["/bin/bash", "-c", "echo 'Waiting for postgres...'; \
-    sleep 5; \
-    echo 'PostgreSQL started'; \
-    echo 'Migrating database...'; \
-    /opt/venv/bin/python manage.py makemigrations --settings=orsem.bsettings; \
-    /opt/venv/bin/python manage.py migrate --settings=orsem.bsettings; \
-    echo 'Database migrated'; \
-    echo 'Creating superuser...'; \
-    /opt/venv/bin/python manage.py createsuperuser --settings=orsem.bsettings || true; \
-    echo 'Superuser created'; \
-    echo 'Collecting static files...'; \
-    /opt/venv/bin/python manage.py collectstatic --noinput --settings=orsem.bsettings;\
-    echo 'Static files collected'; \
-    echo 'Starting server...'; \
-    /opt/venv/bin/python manage.py runserver 0.0.0.0:8000 --settings=orsem.bsettings"]
+ENV DJANGO_SETTINGS_MODULE=orsem.prodsettings
+
+EXPOSE 8080
+
+CMD ["/opt/venv/bin/gunicorn", "orsem.wsgi:application", "--bind", "0.0.0.0:8080"]
