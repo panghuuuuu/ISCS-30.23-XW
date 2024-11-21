@@ -21,6 +21,18 @@ services:
     volumes:
       - db-data:/var/lib/postgresql/data
 
+  orsem-react:
+    container_name: orsem-react
+    build: 
+      context: .
+      dockerfile: ./orsem-react/Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - node_modules:/apps/orsem-react/node_modules
+    env_file:
+      - orsem-react/.env
+
 volumes:
   db-data:
   node_modules:
