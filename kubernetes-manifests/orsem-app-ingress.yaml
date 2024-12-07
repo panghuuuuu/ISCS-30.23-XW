@@ -10,14 +10,14 @@ spec:
     - http:
         paths:
           - path: /api
-            pathType: ImplementationSpecific
+            pathType: Prefix
             backend:
               service:
                 name: orsem-django-lb
                 port:
                   number: 80
           - path: /
-            pathType: ImplementationSpecific
+            pathType: Prefix
             backend:
               service:
                 name: orsem-react-lb
