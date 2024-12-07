@@ -38,3 +38,21 @@ spec:
                 secretKeyRef:
                   name: postgres-secret
                   key: password
+        - name: cloud-sql-proxy
+          image: gcr.io/cloudsql-docker/gce-proxy:1.33.1
+          command:
+            - "/cloud_sql_proxy"
+            - "--dir=/cloudsql"
+            - "--instances=stone-flux-442503-d1:us-central1:django"
+            - "--credential_file=/secrets/cloudsql/credentials.json"
+          volumeMounts:
+            - name: cloudsql
+              mountPath: /cloudsql
+            - name: cloudsql-secrets
+              mountPath: /secrets/cloudsql
+      volumes:
+        - name: cloudsql
+          emptyDir: {}
+        - name: cloudsql-secrets
+          secret:
+            secretName: cloudsql-credentials
