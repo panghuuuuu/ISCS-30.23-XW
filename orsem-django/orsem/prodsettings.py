@@ -45,17 +45,14 @@ cloudinary.config(
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '188.166.76.163',
+    '35.188.70.82',  
+    'justinreyes.tech', 
+    'www.justinreyes.tech',  
+    'localhost',
     '127.0.0.1',
     'localhost:8000',
-    'localhost',
-    '152.69.215.175',
-    'www.justinreyes.tech',
-    'http://www.justinreyes.tech',
-    'justinreyes.tech',
-    'api.admuorsem.com',
-    'orsem-django-809207475199.us-central1.run.app',
-    '35.188.70.82',
+    'api.admuorsem.com',  
+    'orsem-django-809207475199.us-central1.run.app', 
 ]
 
 
