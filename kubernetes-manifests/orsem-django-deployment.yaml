@@ -34,6 +34,9 @@ spec:
                 secretKeyRef:
                   name: postgres-secret
                   key: password
+          volumeMounts:
+            - name: cloudsql
+              mountPath: /cloudsql
         - name: cloud-sql-proxy
           image: gcr.io/cloudsql-docker/gce-proxy:1.33.1
           command:
