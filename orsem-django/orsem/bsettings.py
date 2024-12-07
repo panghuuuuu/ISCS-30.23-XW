@@ -48,7 +48,8 @@ ALLOWED_HOSTS = [
     '188.166.76.163',
     '127.0.0.1',
     'localhost:8000',
-    'localhost'
+    'localhost',
+    '35.188.70.82'
 ]
 
 
