@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orsem-django-v2
+  labels:
+    app: orsem-django
+    version: v2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: orsem-django
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: orsem-django
+        version: v2
+    spec:
+      containers:
+        - name: orsem-django-container
+          image: panghuuuuu/orsem-django:latest
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          env:
+            - name: DB_HOST
+              value: /cloudsql/careful-span-442405-s4:us-central1:iscs-orsem-postgres
+            - name: DB_NAME
+              value: django
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: username
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: password
