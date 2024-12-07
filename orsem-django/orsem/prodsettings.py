@@ -44,17 +44,7 @@ cloudinary.config(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    '35.188.70.82',  
-    'justinreyes.tech', 
-    'www.justinreyes.tech',  
-    'localhost',
-    '127.0.0.1',
-    'localhost:8000',
-    'api.admuorsem.com',  
-    'orsem-django-809207475199.us-central1.run.app', 
-]
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
