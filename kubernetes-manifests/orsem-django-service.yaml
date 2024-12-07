@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: orsem-django
+  name: orsem-django-lb
 spec:
+  type: LoadBalancer
+  loadBalancerIP: 10.10.10.10
   selector:
     app: orsem-django
   ports:
     - protocol: TCP
       port: 80
       targetPort: 8080
-      nodePort: 30081
-  type: NodePort

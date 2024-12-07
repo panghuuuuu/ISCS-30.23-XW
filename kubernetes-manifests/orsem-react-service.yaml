@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: orsem-react
+  name: orsem-react-lb
 spec:
+  type: LoadBalancer
+  loadBalancerIP: 10.10.10.11
   selector:
     app: orsem-react
   ports:
     - protocol: TCP
       port: 80
       targetPort: 3000
-      nodePort: 30082
-  type: NodePort
