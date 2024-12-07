@@ -54,7 +54,7 @@ ALLOWED_HOSTS = [
     'http://www.justinreyes.tech',
     'justinreyes.tech',
     'api.admuorsem.com',
-    'orsem-django-809207475199.us-central1.run.app'
+    'orsem-django-809207475199.us-central1.run.app',
     '35.188.70.82',
 ]
 
