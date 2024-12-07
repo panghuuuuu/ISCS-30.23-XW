@@ -21,7 +21,7 @@ spec:
             - containerPort: 8080
           env:
             - name: DB_HOST
-              value: /cloudsql/careful-span-442405-s4:us-central1:iscs-orsem-postgres
+              value: /cloudsql/stone-flux-442503-d1:us-central1:django
             - name: DB_NAME
               value: django
             - name: DB_USER
