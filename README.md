@@ -206,9 +206,9 @@ Before deploying your application to Kubernetes, you need to configure access to
        --from-file=credentials.json=<path-to-your-json-key>
    ```
 
-### 3️⃣ Deploy to Kubernetes
+#### 3️⃣ Deploy to Kubernetes
 
-#### 🛠 Prerequisites
+### 🛠 Prerequisites
 
 Before deploying your application, ensure the following are updated in your deployment files:
 
@@ -218,48 +218,56 @@ Before deploying your application, ensure the following are updated in your depl
   - **DB_USER**: Set this to the database username, which you should retrieve from the Kubernetes secret (`postgres-secret` or similar).
   - **DB_PASSWORD**: Set this to the database password, also stored in a Kubernetes secret (`postgres-secret` or similar).
 
-1. Set up a Kubernetes Cluster
-   Do instructtions of `Task 1` in:
+### 1️⃣ Set Up a Kubernetes Cluster
+
+Follow the instructions in [Task 1 of this tutorial](https://www.cloudskillsboost.google/focuses/19123?parent=catalog) to set up your Kubernetes cluster.
+
+### 2️⃣ Create Regional and Global Load Balancers
+
+To create static public IP addresses and set up load balancing, refer to [Task 5: Create Static Public IP Addresses using Google Cloud Networking](https://www.cloudskillsboost.google/focuses/19123?parent=catalog).
+
+### 3️⃣ Deploy to Kubernetes
+
+Navigate to the `kubernetes-manifests` directory to apply the Kubernetes manifests step-by-step:
+
+1. Change into the `kubernetes-manifests` directory:
 
    ```bash
-   https://www.cloudskillsboost.google/focuses/19123?parent=catalog
+   cd kubernetes-manifests
    ```
 
-2. Navigate to the `kubernetes-manifests` directory to apply the Kubernetes manifests step-by-step:
+2. Apply the `postgres-secret.yaml` file to create database credentials as Kubernetes Secrets:
 
-   1. Change into the `kubernetes-manifests` directory:
+   ```bash
+   kubectl apply -f postgres-secret.yaml
+   ```
 
-      ```bash
-      cd kubernetes-manifests
-      ```
+3. Deploy the first version of the backend (`orsem-django`):
 
-   2. Apply the `postgres-secret.yaml` file to create database credentials as Kubernetes Secrets:
+   ```bash
+   kubectl apply -f orsem-django-deployment.yaml
+   ```
 
-      ```bash
-      kubectl apply -f postgres-secret.yaml
-      ```
+4. Deploy the updated version of the backend (`orsem-django` v2):
 
-   3. Deploy the first version of the backend (`orsem-django`):
+   ```bash
+   kubectl apply -f orsem-django-deployment-v2.yaml
+   ```
 
-      ```bash
-      kubectl apply -f orsem-django-deployment.yaml
-      ```
+5. Deploy the first version of the frontend (`orsem-react`):
 
-   4. Deploy the updated version of the backend (`orsem-django` v2):
+   ```bash
+   kubectl apply -f orsem-react-deployment.yaml
+   ```
 
-      ```bash
-      kubectl apply -f orsem-django-deployment-v2.yaml
-      ```
-
-   5. Deploy the first version of the frontend (`orsem-react`):
-
-      ```bash
-      kubectl apply -f orsem-react-deployment.yaml
-      ```
-
-   6. Deploy the updated version of the frontend (`orsem-react` v2):
-      ```bash
-      kubectl apply -f orsem-react-deployment-v2.yaml
-      ```
+6. Deploy the updated version of the frontend (`orsem-react` v2):
+   ```bash
+   kubectl apply -f orsem-react-deployment-v2.yaml
+   ```
+7. Deploy service manifests:
+   ```bash
+   kubectl apply -f orsem-django-service.yaml
+   kubectl apply -f orsem-react-service.yaml
+   ```
 
 ---
