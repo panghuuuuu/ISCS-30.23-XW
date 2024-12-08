@@ -165,12 +165,7 @@ To deploy to Cloud Run, you need to push your Docker images to a container regis
 
 ### Using Google Container Registry (GCR)
 
-Please follow the tutorial available at the following link:
-`bash
-https://www.cloudskillsboost.google/focuses/10445?parent=catalog
-`
-
----
+## Please follow this [tutorial](https://www.cloudskillsboost.google/focuses/10445?parent=catalog) to learn how to push and manage Docker images in Google Container Registry.
 
 1. Tag the Docker images with your GCP project ID:
    ```bash
