@@ -218,15 +218,15 @@ Before deploying your application, ensure the following are updated in your depl
   - **DB_USER**: Set this to the database username, which you should retrieve from the Kubernetes secret (`postgres-secret` or similar).
   - **DB_PASSWORD**: Set this to the database password, also stored in a Kubernetes secret (`postgres-secret` or similar).
 
-### 1️⃣ Set Up a Kubernetes Cluster
+### Set Up a Kubernetes Cluster
 
 Follow the instructions in [Task 1 of this tutorial](https://www.cloudskillsboost.google/focuses/19123?parent=catalog) to set up your Kubernetes cluster.
 
-### 2️⃣ Create Regional and Global Load Balancers
+### Create Regional and Global Load Balancers
 
 To create static public IP addresses and set up load balancing, refer to [Task 5: Create Static Public IP Addresses using Google Cloud Networking](https://www.cloudskillsboost.google/focuses/19123?parent=catalog).
 
-### 3️⃣ Deploy to Kubernetes
+### Deploy to Kubernetes
 
 Navigate to the `kubernetes-manifests` directory to apply the Kubernetes manifests step-by-step:
 
