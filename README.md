@@ -195,11 +195,11 @@ Please follow the instructions in [Task 3. Deploy the container to Cloud Run](ht
 
 **Sample Output:**
 
-- **Backend**:
-  ![Clour Run Django](./readme-images/django-cloud-run-deployment.png)
-- **Frontend**:
-  ![Clour Run React](./readme-images/react-cloud-run-deployment.png)
-  e
+**Backend**:
+![Clour Run Django](./readme-images/django-cloud-run-deployment.png)
+**Frontend**:
+![Clour Run React](./readme-images/react-cloud-run-deployment.png)
+e
 
 ### Deploying App in Kubernetes
 
@@ -325,10 +325,9 @@ Replace `REGION` with the appropriate region where your load balancer was create
 
   **Sample Output:**
 
-- **Backend**:
-  ![Kubernetes Django](./readme-images/django-kubernetes-deployment.png)
-- **Frontend**:
-  ![Kubernetes React](./readme-images/react-kubernetes-deployment.png)
-  e
+**Backend**:
+![Kubernetes Django](./readme-images/django-kubernetes-deployment.png)
+**Frontend**:
+![Kubernetes React](./readme-images/react-kubernetes-deployment.png)
 
 ---
