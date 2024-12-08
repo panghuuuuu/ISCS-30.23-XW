@@ -30,11 +30,6 @@ _NOTE: Refer to the `README.md` in each folder to find their respective document
 
 `[name]-[feature]-dev` - Additional features should be split into its own branch (ex. `echo-update-frontend-dev`).
 
-## 🧑‍💻 Working Guidelines
-
-- **Rebase before merging**. For instance, merging a dev branch into `staging`, ensure first to rebase on `staging`. This is to minimize any merge conflicts.
-- **Delete merged branches**. Stale branches (i.e. branches that have already been merged) are considered unnecessary and should be pruned.
-
 ## 🚀 Deployment Process
 
 This guide outlines the steps for building Docker images, pushing them to a container registry, configuring CloudSQL, deploying the application to a Kubernetes cluster, and exposing the services using Kubernetes resources.
@@ -62,11 +57,11 @@ Before proceeding, ensure the following:
    git clone https://github.com/panghuuuuu/ISCS-30.23-XW.git
    ```
 
-## 1️⃣ Configure CloudSQL
+## 2️⃣ Configure CloudSQL
 
 If you're using **Google Cloud SQL** for your database, follow these steps to configure it:
 
-### 2️⃣ Create CloudSQL Instance
+### Create CloudSQL Instance
 
 1. Go to the [Google Cloud Console](https://console.cloud.google.com).
 2. Navigate to **SQL** and create a new instance. Choose **PostgreSQL** or your desired database.
