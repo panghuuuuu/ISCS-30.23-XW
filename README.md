@@ -180,7 +180,7 @@ To deploy to Cloud Run, you need to push your Docker images to a container regis
 
 ### Using Dockerhub
 
-- 1.  Tag the Docker images with the following commands:
+- Tag the Docker images with the following commands:
 
   ```bash
   docker tag orsem-django:latest <your-dockerhub-username>/orsem-django:latest
