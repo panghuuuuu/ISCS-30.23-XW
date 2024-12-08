@@ -191,14 +191,14 @@ To deploy to Cloud Run, you need to push your Docker images to a container regis
 
 Before deploying your application to Kubernetes, you need to configure access to your Cloud SQL instance. This involves setting up a Cloud SQL instance, creating credentials, and ensuring your Kubernetes deployment can securely connect to the database using the Cloud SQL Proxy.
 
-### 1️⃣ Download Service Account Credentials
+## 1️⃣ Download Service Account Credentials
 
 1. Navigate to the [Service Accounts Console](https://console.cloud.google.com/iam-admin/serviceaccounts).
 2. Create or locate a service account with the **Cloud SQL Client** role.
 3. Click **Manage Keys** for the service account, then **Add Key** → **Create New Key** → **JSON**.
 4. Download the JSON file and save it securely.
 
-### 2️⃣ Create a Kubernetes Secret for Cloud SQL Credentials
+## 2️⃣ Create a Kubernetes Secret for Cloud SQL Credentials
 
 1. Use the downloaded JSON file to create a Kubernetes Secret:
    ```bash
@@ -206,7 +206,7 @@ Before deploying your application to Kubernetes, you need to configure access to
        --from-file=credentials.json=<path-to-your-json-key>
    ```
 
-#### 3️⃣ Deploy to Kubernetes
+### 3️⃣ Deploy to Kubernetes
 
 ### 🛠 Prerequisites
 
