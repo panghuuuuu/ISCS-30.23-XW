@@ -198,6 +198,7 @@ Please follow the instructions in [Task 3. Deploy the container to Cloud Run](ht
   ![Clour Run Django](./readme-images/django-cloud-run-deployment.png)
 - **Frontend**:
   ![Clour Run React](./readme-images/react-cloud-run-deployment.png)
+  e
 
 ### Deploying App in Kubernetes
 
@@ -240,6 +241,8 @@ Follow the instructions in [Task 1 of this tutorial](https://www.cloudskillsboos
 
 To create static public IP addresses and set up load balancing, refer to [Task 5: Create Static Public IP Addresses using Google Cloud Networking](https://www.cloudskillsboost.google/focuses/19123?parent=catalog).
 
+Note: Create two separate load balancers for frontend and backend.
+
 ### Deploy to Kubernetes
 
 Navigate to the `kubernetes-manifests` directory to apply the Kubernetes manifests step-by-step:
@@ -279,9 +282,52 @@ Navigate to the `kubernetes-manifests` directory to apply the Kubernetes manifes
    kubectl apply -f orsem-react-deployment-v2.yaml
    ```
 7. Deploy service manifests:
-   ```bash
-   kubectl apply -f orsem-django-service.yaml
-   kubectl apply -f orsem-react-service.yaml
-   ```
+
+Follow the instructions in [Define service types in the manifest](https://www.cloudskillsboost.google/focuses/19123?parent=catalog) match the addresses for the regional-loadbalancer for the reserved static ip-address.
+
+### Note:
+
+Make sure you replace `regional-loadbalancer` with the name of the load balancer you created.
+
+1. **Get the static IP address of the regional load balancer**:
+   Replace `regional-loadbalancer` with the name of the load balancer you created for the backend.
+
+```bash
+export STATIC_LB=$(gcloud compute addresses describe regional-loadbalancer --region REGION --format json | jq -r '.address')
+```
+
+Replace `REGION` with the appropriate region where your load balancer was created.
+
+- 2. Update the backend service YAML file (`orsem-django-service.yaml`) by replacing the IP address placeholder:
+
+  ```bash
+  sed -i "s/10\.10\.10\.10/$STATIC_LB/g" orsem-django-service.yaml
+  ```
+
+  This will update the backend service YAML file (`orsem-backend-service.yaml`) with the correct static IP address.
+
+- 3. Run the command from Step 1 to get the static IP address of the regional load balancer (`frontend`)
+     Replace `regional-loadbalancer` with the name of the load balancer you created for the frontend.
+
+  ```bash
+  sed -i "s/10\.10\.10\.11/$STATIC_LB/g" orsem-react-service.yaml
+  ```
+
+  This will update the frontend service YAML file (`orsem-react-service.yaml`) with the correct static IP address.
+
+- 4. Deploy service manifests
+
+  ```bash
+  kubectl apply -f orsem-django-service.yaml
+  kubectl apply -f orsem-react-service.yaml
+  ```
+
+  **Sample Output:**
+
+- **Backend**:
+  ![Kubernetes Django](./readme-images/django-kubernetes-deployment.png)
+- **Frontend**:
+  ![Kubernetes React](./readme-images/react-kubernetes-deployment.png)
+  e
 
 ---
