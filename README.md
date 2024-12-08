@@ -180,12 +180,26 @@ To deploy to Cloud Run, you need to push your Docker images to a container regis
 
 ### Using Dockerhub
 
+    Tag the Docker images with the following commands:
     ```bash
     docker tag orsem-django:latest <your-dockerhub-username>/orsem-django:latest
     docker tag orsem-react:latest <your-dockerhub-username>/orsem-react:latest
     ```
 
-## 5️⃣ Deploying App in Kubernetes
+## 5️⃣ Deploying App
+
+### Deploying App in CloudRun
+
+Please follow the instructions in [Task 3. Deploy the container to Cloud Run](https://www.cloudskillsboost.google/focuses/10445?parent=catalog) to deploy both your backend and frontend in Cloud Run.
+
+**Sample Output:**
+
+- **Backend**:
+  ![Clour Run Django](./readme-images/django-cloud-run-deployment.png)
+- **Frontend**:
+  ![Clour Run React](./readme-images/react-cloud-run-deployment.png)
+
+### Deploying App in Kubernetes
 
 ### Prerequisite: Configure Cloud SQL for Kubernetes Deployment
 
