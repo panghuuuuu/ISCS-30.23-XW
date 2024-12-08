@@ -9,18 +9,17 @@ spec:
   rules:
     - http:
         paths:
-          - path: /frontend/
-            pathType: Prefix
-            backend:
-              service:
-                name: orsem-react-lb
-                port:
-                  number: 80
-
-          - path: /api/
+          - path: /
             pathType: Prefix
             backend:
               service:
                 name: orsem-django-lb
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: orsem-react-lb
                 port:
                   number: 80
