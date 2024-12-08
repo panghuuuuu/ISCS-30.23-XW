@@ -289,8 +289,8 @@ Follow the instructions in [Define service types in the manifest](https://www.cl
 
 Make sure you replace `regional-loadbalancer` with the name of the load balancer you created.
 
-1. **Get the static IP address of the regional load balancer**:
-   Replace `regional-loadbalancer` with the name of the load balancer you created for the backend.
+- 1. **Get the static IP address of the regional load balancer**:
+     Replace `regional-loadbalancer` with the name of the load balancer you created for the backend.
 
 ```bash
 export STATIC_LB=$(gcloud compute addresses describe regional-loadbalancer --region REGION --format json | jq -r '.address')
