@@ -199,7 +199,6 @@ Please follow the instructions in [Task 3. Deploy the container to Cloud Run](ht
 ![Clour Run Django](./readme-images/django-cloud-run-deployment.png)
 **Frontend**:
 ![Clour Run React](./readme-images/react-cloud-run-deployment.png)
-e
 
 ### Deploying App in Kubernetes
 
