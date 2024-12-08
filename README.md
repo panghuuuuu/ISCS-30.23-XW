@@ -41,11 +41,32 @@ This guide outlines the steps for building Docker images, pushing them to a cont
 
 ---
 
+## 🛠 Prerequisites
+
+Before proceeding, ensure the following:
+
+1. You have a **Google Cloud Platform (GCP)** project set up.
+2. **Google Cloud Run** will be used for deploying the application.
+3. The **Cloud Run API** and **Cloud SQL Admin API** are enabled in your GCP project.
+4. You have the **Google Cloud CLI (`gcloud`)** installed and authenticated.
+5. Billing is enabled for your GCP project.
+6. Access to a container registry (e.g., Google Container Registry or Docker Hub).
+
+---
+
+## 1️⃣ Clone the Repository on Google Cloud
+
+1. Access the Google Cloud Console or activate the Google Cloud Shell.
+2. Clone the project repository into the Google Cloud environment:
+   ```bash
+   git clone https://github.com/panghuuuuu/ISCS-30.23-XW.git
+   ```
+
 ## 1️⃣ Configure CloudSQL
 
 If you're using **Google Cloud SQL** for your database, follow these steps to configure it:
 
-### Create CloudSQL Instance
+### 2️⃣ Create CloudSQL Instance
 
 1. Go to the [Google Cloud Console](https://console.cloud.google.com).
 2. Navigate to **SQL** and create a new instance. Choose **PostgreSQL** or your desired database.
@@ -115,7 +136,7 @@ If you're using **Google Cloud SQL** for your database, follow these steps to co
 
 ---
 
-## 2️⃣ Build Docker Images
+## 3️⃣ Build Docker Images
 
 ### Backend (`orsem-django`)
 
@@ -143,17 +164,112 @@ If you're using **Google Cloud SQL** for your database, follow these steps to co
 
 ---
 
-## 3️⃣ Push Docker Images to a Container Registry
+## 4️⃣ Push Docker Images to a Container Registry
 
-To use the images in Kubernetes, push them to a container registry like Docker Hub.
+To deploy to Cloud Run, you need to push your Docker images to a container registry.
 
-### Tag the images
+### Using Google Container Registry (GCR)
 
-If you're using **Docker Hub**, tag the images:
+Please follow the tutorial available at the following link:
+`bash
+https://www.cloudskillsboost.google/focuses/10445?parent=catalog
+`
 
-```bash
-docker tag orsem-django:latest <your-dockerhub-username>/orsem-django:latest
-docker tag orsem-react:latest <your-dockerhub-username>/orsem-react:latest
-docker push <your-dockerhub-username>/orsem-django:latest
-docker push <your-dockerhub-username>/orsem-react:latest
-```
+---
+
+1. Tag the Docker images with your GCP project ID:
+   ```bash
+   docker tag orsem-django:latest gcr.io/<project-id>/orsem-django:latest
+   docker tag orsem-react:latest gcr.io/<project-id>/orsem-react:latest
+   ```
+2. Push the Docker images to Google Container Registry
+   ```bash
+   docker push gcr.io/<project-id>/orsem-django:latest
+   docker push gcr.io/<project-id>/orsem-react:latest
+   ```
+
+### Using Dockerhub
+
+    ```bash
+    docker tag orsem-django:latest <your-dockerhub-username>/orsem-django:latest
+    docker tag orsem-react:latest <your-dockerhub-username>/orsem-react:latest
+    ```
+
+### 5️⃣ Deploying App in Kubernetes
+
+## Prerequisite: Configure Cloud SQL for Kubernetes Deployment
+
+Before deploying your application to Kubernetes, you need to configure access to your Cloud SQL instance. This involves setting up a Cloud SQL instance, creating credentials, and ensuring your Kubernetes deployment can securely connect to the database using the Cloud SQL Proxy.
+
+### 1️⃣ Download Service Account Credentials
+
+1. Navigate to the [Service Accounts Console](https://console.cloud.google.com/iam-admin/serviceaccounts).
+2. Create or locate a service account with the **Cloud SQL Client** role.
+3. Click **Manage Keys** for the service account, then **Add Key** → **Create New Key** → **JSON**.
+4. Download the JSON file and save it securely.
+
+### 2️⃣ Create a Kubernetes Secret for Cloud SQL Credentials
+
+1. Use the downloaded JSON file to create a Kubernetes Secret:
+   ```bash
+   kubectl create secret generic cloudsql-credentials \
+       --from-file=credentials.json=<path-to-your-json-key>
+   ```
+
+### 3️⃣ Deploy to Kubernetes
+
+#### 🛠 Prerequisites
+
+Before deploying your application, ensure the following are updated in your deployment files:
+
+- **Image**: Update the `image` field to reflect the correct container image for your application (e.g., Docker image name and version/tag).
+- **Environment Variables**:
+  - **DB_HOST**: Set this to the Cloud SQL instance's connection name. The format is `/cloudsql/<project-id>:<region>:<instance-id>`.
+  - **DB_USER**: Set this to the database username, which you should retrieve from the Kubernetes secret (`postgres-secret` or similar).
+  - **DB_PASSWORD**: Set this to the database password, also stored in a Kubernetes secret (`postgres-secret` or similar).
+
+1. Set up a Kubernetes Cluster
+   Do instructtions of `Task 1` in:
+
+   ```bash
+   https://www.cloudskillsboost.google/focuses/19123?parent=catalog
+   ```
+
+2. Navigate to the `kubernetes-manifests` directory to apply the Kubernetes manifests step-by-step:
+
+   1. Change into the `kubernetes-manifests` directory:
+
+      ```bash
+      cd kubernetes-manifests
+      ```
+
+   2. Apply the `postgres-secret.yaml` file to create database credentials as Kubernetes Secrets:
+
+      ```bash
+      kubectl apply -f postgres-secret.yaml
+      ```
+
+   3. Deploy the first version of the backend (`orsem-django`):
+
+      ```bash
+      kubectl apply -f orsem-django-deployment.yaml
+      ```
+
+   4. Deploy the updated version of the backend (`orsem-django` v2):
+
+      ```bash
+      kubectl apply -f orsem-django-deployment-v2.yaml
+      ```
+
+   5. Deploy the first version of the frontend (`orsem-react`):
+
+      ```bash
+      kubectl apply -f orsem-react-deployment.yaml
+      ```
+
+   6. Deploy the updated version of the frontend (`orsem-react` v2):
+      ```bash
+      kubectl apply -f orsem-react-deployment-v2.yaml
+      ```
+
+---
